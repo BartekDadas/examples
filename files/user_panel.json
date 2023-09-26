@@ -1,0 +1,363 @@
+{
+    "type" : "set_value",
+    "args" : {
+        "bgColor" : "CCCAAD", 
+        "child" : {
+            "type" : "scaffold",
+            "args" : {
+                "body" : {
+                    "type" : "list_view",
+                    "args" : {
+                        "children" : [
+                            {
+                                "type" : "row",
+                                "args" : {
+                                        "children" : [
+                                            {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding": 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "person"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Profile"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "groups"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Groups"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type" : "row",
+                                "args" : {
+                                    "children" : [
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "bookmark"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Favorites"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "Your Activity History"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "history"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ] 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type" : "row",
+                                "args" : {
+                                    "children" : [ 
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "settings"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Settings"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" :{
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "manage_search"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Search"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ] 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type" : "row",
+                                "args" : {
+                                    "children" : [ 
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "edit"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Edit"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "credit_card"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Subscription"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ] 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type" : "row",
+                                "args" : {
+                                    "children" : [ 
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "pantool"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Support"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }   
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "container",
+                                            "args" : {
+                                                "decoration" : {
+                                                    "shape" : "rectangle",
+                                                    "padding" : 5
+                                                },
+                                                "child" : {
+                                                    "type" : "row",
+                                                    "args" : {
+                                                        "children" : [
+                                                            {
+                                                                "type" : "material_icon",
+                                                                "args" : {
+                                                                    "icon" : "logout"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type" : "list_title",
+                                                                "args" : {
+                                                                    "text" : {
+                                                                        "type" : "text",
+                                                                        "data" : "Log out"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ] 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            } 
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
