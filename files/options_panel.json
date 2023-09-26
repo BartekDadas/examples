@@ -1,0 +1,229 @@
+{
+    "type" : "set_value",
+    "args" : {
+        "abColor" : "FF0FF0",
+        "bnbColor" : "EACFFD",
+        "child" : {
+            "type" : "scaffold",
+            "args" : {
+                "appBar" : {
+                    "type" : "app_bar",
+                    "args" : {
+                        "title" : {
+                            "type" : "text",
+                            "args" : {
+                                "text" : "User: Jack Logan"
+                            }
+                        }
+                    }
+                },
+                "body": {
+                    "type" : "center",
+                    "args" : {
+                        "child" : {
+                            "type" : "list_view",
+                            "args" : {
+                                "children" :[
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "heigth" : 100,
+                                            "decoration" : "",
+                                            "child" : {
+                                                "type" : "padding",
+                                                "args" : {
+                                                    "padding" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "top" : 8,
+                                                            "bottom" : 8,
+                                                            "left" : 12,
+                                                            "right" : 12
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "list_title",
+                                                        "args" : {
+                                                            "title" : {
+                                                                "type" : "text",
+                                                                "args" : {
+                                                                    "text" : "Label 1"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "heigth" : 100,
+                                            "decoration" : "",
+                                            "child" : {
+                                                "type" : "padding",
+                                                "args" : {
+                                                    "padding" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "top" : 8,
+                                                            "bottom" : 8,
+                                                            "left" : 12,
+                                                            "right" : 12
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "list_title",
+                                                        "args" : {
+                                                            "title" : {
+                                                                "type" : "text",
+                                                                "args" : {
+                                                                    "text" : "Label 2"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "heigth" : 100,
+                                            "decoration" : "",
+                                            "child" : {
+                                                "type" : "padding",
+                                                "args" : {
+                                                    "padding" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "top" : 8,
+                                                            "bottom" : 8,
+                                                            "left" : 12,
+                                                            "right" : 12
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "list_title",
+                                                        "args" : {
+                                                            "title" : {
+                                                                "type" : "text",
+                                                                "args" : {
+                                                                    "text" : "Label 3"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "heigth" : 100,
+                                            "decoration" : "",
+                                            "child" : {
+                                                "type" : "padding",
+                                                "args" : {
+                                                    "padding" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "top" : 8,
+                                                            "bottom" : 8,
+                                                            "left" : 12,
+                                                            "right" : 12
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "list_title",
+                                                        "args" : {
+                                                            "title" : {
+                                                                "type" : "text",
+                                                                "args" : {
+                                                                    "text" : "Label 4"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "heigth" : 100,
+                                            "decoration" : "",
+                                            "child" : {
+                                                "type" : "padding",
+                                                "args" : {
+                                                    "padding" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "top" : 8,
+                                                            "bottom" : 8,
+                                                            "left" : 12,
+                                                            "right" : 12
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "list_title",
+                                                        "args" : {
+                                                            "title" : {
+                                                                "type" : "text",
+                                                                "args" : {
+                                                                    "text" : "Label 5"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }, 
+                "bottomNaviagtionBar" : {
+                    "type" : "bottom_navigation_bar",
+                    "args" : {
+                        "selectedItemColor" : "${bnbColor}",
+                        "onTap" : "${change(index)}",
+                        "currentIndex" : "${curr}",
+                        "actions" : [
+                            {
+                                "type" : "bottom_navigation_bar_item",
+                                "args" : {
+                                    "label" : "Home",
+                                    "icon" : {
+                                        "type" : "material_icon",
+                                        "args" : {
+                                            "icon" : "home"
+                                        }
+                                    }
+                                }
+                            }, 
+                            {
+                                "type" : "bottom_navigation_bar_item",
+                                "args" : {
+                                    "label" : "Library",
+                                    "icon" : {
+                                        "type" : "material_icon",
+                                        "args" : {
+                                            "icon" : "bookmarks"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
