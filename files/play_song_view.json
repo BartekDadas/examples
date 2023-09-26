@@ -1,0 +1,89 @@
+{
+  "type" : "set_value",
+  "args" : {
+    "btnColor": "FFAADE",
+    "child" : {
+      "type" : "scaffold",
+      "args" : {
+        "body" : {
+          "type": "column",
+          "args" : {
+            "children" : [
+              {
+                "type" : "center",
+                "args" : {
+                  "child" : {
+                    "type" : "circle_avatar",
+                    "args" : {
+                      "backgroundImage" : {
+                        "type" : "network_image",
+                        "args" : {
+                          "url" : ""
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "row",
+                "args" : {
+                  "children" : [
+                    {
+                      "type" : "circle_button",
+                      "args" : {
+                        "shape": "circle",
+                        "width": 15,
+                        "height": 15,
+                        "backgroundColor": "FFF-FFF",
+                        "child": {
+                          "type": "icon",
+                          "args": {
+                            "icon": "skip_previous",
+                            "color" : "000000"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type" : "circle_button",
+                      "args" : {
+                        "shape" : "circle",
+                        "width" : 15,
+                        "height" : 15,
+                        "backgroundColor" : "FFF-FFF",
+                        "child" : {
+                          "type" : "icon",
+                          "args" : {
+                            "icon" :  "play",
+                            "color" : "000000"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type" : "circle_button",
+                      "args" : {
+                        "shape" : "circle",
+                        "width" : 15,
+                        "height" : 15,
+                        "backgroundColor" : "FFF-FFF",
+                        "child" : {
+                          "type" : "icon",
+                          "args" : {
+                            "icon" : "skip_next",
+                            "color" : "000000"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
