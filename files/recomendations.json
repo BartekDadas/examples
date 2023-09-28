@@ -1,0 +1,145 @@
+
+  "type": "scaffold",
+  "args": {
+    "appBar": {
+      "type": "app_bar",
+      "args": {
+        "title": {
+          "type": "text",
+          "args": {
+            "text": "Recomendations"
+          }
+        }
+      }
+    },
+    "body": {
+      "type": "set_value",
+      "args": {
+        "name" : "Taylor Swift",
+        "child" : {
+          "type" : "column",
+          "agrs" : {
+            "children" : [
+              {
+                  "type" : "container", 
+                  "args" : {
+                  "type" : "row",
+                  "args" : {
+                    "children" : [
+                      {
+                        "type" : "circle_avatar",
+                        "args" : {
+                        }
+                      },
+                      {
+                        "type" : "text",
+                        "agrs" : {
+                          "data" : "Podobne do ${name}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type" : "row",
+                "args" : {
+                  "children" : [
+                    {
+                      "type" : "circle_avatar",
+                      "args" : {
+
+                      }
+                    },
+                    {
+                      "type" : "text",
+                      "args" : {
+                        "data" : ""
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type" : "row",
+                "args" : {
+                  "children" : [
+                    {
+                      "type" : "circle_avatar",
+                      "args" : {
+
+                      }
+                    },
+                    {
+                      "type" :  "text",
+                      "args" : {
+                        "data" : ""
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type" : "row",
+                "args" : {
+                  "children" : [
+                    {
+                      "type" : "circle_avatar",
+                      "args" : {}
+                    },
+                    {
+                      "type" : "text",
+                      "args" : {
+                        "data" : ""
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type" : "row",
+                "args": {
+                  "children": [
+                    {
+                      "type" : "circle_avatar",
+                      "args" : {}
+                    },
+                    {
+                      "type" : "text",
+                      "args" : {
+                        "data" : ""
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type" : "row",
+                "args" : {
+                  "children" : [
+                    {
+                      "type" : "circle_avatar",
+                      "args" : []
+                    },
+                    {
+                      "type" : "text",
+                      "agrs" : {
+                        "data" : ""
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bottomNavigationBar" : {
+      "type": "cupertino_tab_bar",
+      "args": {
+        
+      }
+    }
+  }
+}
