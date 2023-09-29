@@ -1,0 +1,76 @@
+{
+    "set_value": {
+        "backcolor" : "FFFFFE",
+        "button_color" : "0000FF",
+        "child" : {
+            "type" : "scaffold",
+            "args" : {
+                "body" : {
+                    "type" : "center",
+                    "args" : {
+                        "child" : {
+                            "type" :   "column",
+                            "args" : {
+                                "children" : [
+                                    {
+                                        "type" : "network_image",
+                                        "args" : {}
+                                    },
+                                    {
+                                        "type" : "column",
+                                        "args" : {
+                                            "children" : [
+                                                {
+                                                    "type" : "elevated_button",
+                                                    "args" : {
+                                                        "style" : {
+                                                            "backgroundColor" : "${button_color}"
+                                                        },
+                                                        "child" : {
+                                                            "type" : "text",
+                                                            "args" : {
+                                                                "data" : "Add to Card"
+                                                            }
+                                                        }   
+                                                    }
+                                                },
+                                                {
+                                                    "type" : "elevated_button",
+                                                    "args" : {
+                                                        "style" : {
+                                                            "backgroundColor" : "${button_color}"
+                                                        },
+                                                        "child" : {
+                                                            "type" : "text",
+                                                            "args" : {
+                                                                "data" : "Buy Now"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type" : "elevated_button",
+                                                    "args" : {
+                                                        "style" : {
+                                                            "backgroundColor" : "${button_color}"
+                                                        },
+                                                        "child" : {
+                                                            "type" : "text",
+                                                            "args" : {
+                                                                "data" : "Go Back"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
