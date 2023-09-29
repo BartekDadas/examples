@@ -1,145 +1,214 @@
-
-  "type": "scaffold",
-  "args": {
-    "appBar": {
-      "type": "app_bar",
-      "args": {
-        "title": {
-          "type": "text",
-          "args": {
-            "text": "Recomendations"
-          }
-        }
-      }
-    },
-    "body": {
-      "type": "set_value",
-      "args": {
-        "name" : "Taylor Swift",
-        "child" : {
-          "type" : "column",
-          "agrs" : {
-            "children" : [
-              {
-                  "type" : "container", 
-                  "args" : {
-                  "type" : "row",
-                  "args" : {
-                    "children" : [
-                      {
-                        "type" : "circle_avatar",
-                        "args" : {
+{
+    "type": "set_value",
+    "args": {
+        "_title": "Recomendations",
+        "child": {
+            "type": "scaffold",
+            "args": {
+                "backgroundColor": "000000",
+                "appBar": {
+                    "type": "app_bar",
+                    "args": {
+                        "title": {
+                            "type": "text",
+                            "args": {
+                                "text": "${_title}"
+                            }
                         }
-                      },
-                      {
-                        "type" : "text",
-                        "agrs" : {
-                          "data" : "Podobne do ${name}"
+                    }
+                },
+                "body": {
+                    "type": "set_value",
+                    "args": {
+                        "name": "Taylor Swift",
+                        "child": {
+                            "type": "column",
+                            "agrs": {
+                                "children": [
+                                    {
+                                        "type": "container",
+                                        "args": {
+                                            "type": "row",
+                                            "args": {
+                                                "children": [
+                                                    {
+                                                        "type": "circle_avatar",
+                                                        "args": {
+                                                            "name": "assets/picture/taylor.png"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "agrs": {
+                                                            "data": "Podobne do ${name}"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_avatar",
+                                                    "args": {
+                                                        "name": "assets/picture/oliwia.png"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "args": {
+                                                        "data": "Oliwia Rodrigo"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_avatar",
+                                                    "args": {
+                                                        "name": "assets/picture/halsey.png"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "args": {
+                                                        "data": "Halsey"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_avatar",
+                                                    "args": {
+                                                        "name": "assets/picture/ed.png"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "args": {
+                                                        "data": "Ed Sheeran"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_avatar",
+                                                    "args": {
+                                                        "name": "assets/picture/lana.png"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "args": {
+                                                        "data": "Lana Del Ray"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_avatar",
+                                                    "args": {
+                                                        "name": "assets/picture/harry.png"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "agrs": {
+                                                        "data": "Harry Styles"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         }
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "type" : "row",
-                "args" : {
-                  "children" : [
-                    {
-                      "type" : "circle_avatar",
-                      "args" : {
-
-                      }
-                    },
-                    {
-                      "type" : "text",
-                      "args" : {
-                        "data" : ""
-                      }
                     }
-                  ]
-                }
-              },
-              {
-                "type" : "row",
-                "args" : {
-                  "children" : [
-                    {
-                      "type" : "circle_avatar",
-                      "args" : {
-
-                      }
-                    },
-                    {
-                      "type" :  "text",
-                      "args" : {
-                        "data" : ""
-                      }
+                },
+                "bottomNavigationBar": {
+                    "type": "animated_notch_bottom_bar",
+                    "args": {
+                        "bottomBarItems": [
+                            {
+                                "type": "bottom_bar_item",
+                                "args": {
+                                    "activeIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "shopping_card"
+                                        }
+                                    },
+                                    "inAciveIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "add_shopping_card"
+                                        }
+                                    },
+                                    "color": "#DDDFFC"
+                                }
+                            },
+                            {
+                                "type": "bottom_bar_item",
+                                "args": {
+                                    "activeIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "arrow_upward"
+                                        }
+                                    },
+                                    "inActiveIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "arrow_downword"
+                                        }
+                                    },
+                                    "color": "#FFFFAA"
+                                }
+                            },
+                            {
+                                "type": "bottom_bar_item",
+                                "args": {
+                                    "activeIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "favourite"
+                                        }
+                                    },
+                                    "inAciveIcon": {
+                                        "type": "material_icon",
+                                        "args": {
+                                            "icon": "heart_plus"
+                                        }
+                                    },
+                                    "color": "#ADADEC"
+                                }
+                            }
+                        ]
                     }
-                  ]
                 }
-              },
-              {
-                "type" : "row",
-                "args" : {
-                  "children" : [
-                    {
-                      "type" : "circle_avatar",
-                      "args" : {}
-                    },
-                    {
-                      "type" : "text",
-                      "args" : {
-                        "data" : ""
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type" : "row",
-                "args": {
-                  "children": [
-                    {
-                      "type" : "circle_avatar",
-                      "args" : {}
-                    },
-                    {
-                      "type" : "text",
-                      "args" : {
-                        "data" : ""
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type" : "row",
-                "args" : {
-                  "children" : [
-                    {
-                      "type" : "circle_avatar",
-                      "args" : []
-                    },
-                    {
-                      "type" : "text",
-                      "agrs" : {
-                        "data" : ""
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          }
+            }
         }
-      }
-    },
-    "bottomNavigationBar" : {
-      "type": "cupertino_tab_bar",
-      "args": {
-        
-      }
     }
-  }
 }
