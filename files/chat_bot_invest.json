@@ -1,0 +1,298 @@
+{
+  "type" : "set_value",
+  "args" :  {
+    "baseSliderValue" : 3000,
+    "child" : {
+      "type" : "scaffold",
+      "args" : {
+        "appBar" : {
+          "type" : "app_bar",
+          "args" : {
+            "leading" : {
+              "type" : "ink_well",
+              "args" : {
+                "onTap" : "${goBack()}",
+                "child" : {
+                  "type" : "material_icon",
+              "args" : {
+                "icon" : "arrow_back"   
+              }
+                }
+              }
+            },
+            "title" : {
+              "type" : "text",
+              "args" : {
+                "data" : "James Martin"
+              }
+            } 
+          },
+          "actions" : [
+            {
+              "type" : "ink_well",
+              "args" : {
+                "onTap" : "${showNotifications()}",
+                "child" : {
+                  "type" : "material_icon",
+                  "args" : {
+                    "icon" : "notifications_active"
+                  } 
+                }
+              }
+            }
+          ]
+        },
+        "body" : {
+          "type" : "column",
+          "args" : {
+            "children" : [
+              {
+                "type" : "sized_box",
+                "args" : {
+                  "child" : {
+                    "type" : "padding",
+                    "args" : {
+                      "padding" : 20,
+                      "child" : {
+                        "type" : "row",
+                        "args" : {
+                          "children" : [
+                            {
+                              "type" : "align",
+                              "args" : {
+                                "alignment" : "topLeft",
+                                "child" : {
+                                  "type" : "circle_avatar",
+                                  "args" : {
+                                    "backgroundImage" : {
+                                      "type" : "network_image",
+                                      "args" : {
+                                        "src" : ""
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type" : "align",
+                              "args" : {
+                                "alignment" : "center",
+                                "child" : {
+                                  "type" : "column",
+                                  "args" : {
+                                    "children" : [
+                                      {
+                                        "type" : "container",
+                                        "args" : {
+                                          "decoration" : {
+                                            "borderRadius" : 20,
+                                            "padding" : {
+                                              "top" : 10,
+                                              "bottom" : 10,
+                                              "left" : 15,
+                                              "right" : 15
+                                            }
+                                          },
+                                          "child" : {
+                                            "type" : "text",
+                                            "args" : {
+                                              "data" : "Tell me about the money"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type" : "container",
+                                        "args" : {
+                                          "decoration" : {
+                                            "borderRadius" : 20, 
+                                            "padding" : {
+                                              "top" : 10,
+                                              "bottom" : 10,
+                                              "left" : 15,
+                                              "right" : 15
+                                            }
+                                          },
+                                          "child" : {
+                                            "type" : "text",
+                                            "args" : {
+                                              "data" : "How much money would you \n like me to invest in the begging" 
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                } 
+                              }
+                            },
+                            {
+                              "type" : "align",
+                              "args" : {
+                                "alignment" : "bottomRight",
+                                "child" : {
+                                  "type" : "row",
+                                  "args" : {
+                                    "children" : [
+                                      {
+                                        "type" : "material_icon",
+                                        "args" : {
+                                          "color" : "#E0E0EB",
+                                          "icon" : "more_horiz"
+                                        }
+                                      },
+                                      {
+                                        "type" : "circle_avatar",
+                                        "args": {
+                                          "backgroundImage" : {
+                                            "type" : "network_image",
+                                            "args" : {
+                                              "src" : ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                  "type" : "sized_box",
+                  "args" : {
+                    "child" : {
+                      "type" : "center",
+                      "args" : {
+                        "child" : {
+                          "type" : "column",
+                          "args" : {
+                            "children" : [
+                              {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                  "child": {
+                                    "type" : "sf_slider",
+                                    "args" : {
+                                      "min" : 100,
+                                      "max" : 5000,
+                                      "interval" : 300,
+                                      "value" : "${slid}",
+                                      "showLabels" : true,
+                                      "onChanged" : "${slide(slid)}"
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                  "child" : {
+                                    "type" : "elevated_button",
+                                    "args" : {
+                                      "onPressed" : "",
+                                      "child" : {
+                                        "type" : "row",
+                                        "args" : {
+                                          "children" : [
+                                            {
+                                              "type" : "text",
+                                              "args" : {
+                                                "data" : "Accept"
+                                              }
+                                            },
+                                            {
+                                              "type" : "material_icon",
+                                              "args" : {
+                                                "color" : "#336600",
+                                                "icon" : "check_circle_outlined"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    } 
+                                  }
+                                }
+                            }
+                          ]  
+                        }
+                      }
+                    }
+                  }
+                } 
+              }
+            ]
+          }
+        },
+        "bottomBottomNavigation" : {
+          "type" : "animated_notch_bottom_bar",
+          "args" : {
+            "bottomBarItems" : [
+              {
+                "type" : "bottom_bar_item",
+                "args" :  {
+                  "activeItem" : {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "table_rows"
+                    }
+                  },
+                  "inActiveItem" : {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "table_rows"
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "bottom_bar_item",
+                "args" : {
+                  "activeItem" : {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "chat_bubble"
+                    }
+                  },
+                  "inActiveItem" : {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "chat_bubble"
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "bottom_bar_item",
+                "args" : {
+                  "activeItem" :  {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "person"
+                    }
+                  },
+                  "inActiveItem" : {
+                    "type" : "material_icon",
+                    "args" : {
+                      "icon" : "person"
+                    }
+                  }
+                }
+              }
+            ] 
+          }
+        }
+      }
+    }
+  }
+}
