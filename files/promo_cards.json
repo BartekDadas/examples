@@ -1,0 +1,937 @@
+{
+  "type": "set_value",
+  "args": {
+    "backColor": "#9933FF",
+    "child": {
+      "type": "scaffold",
+      "args": {
+        "appBar": {
+          "type": "app_bar",
+          "args": {
+            "backgroundColor": "${backColor}",
+            "leading": {
+              "type": "inkwell",
+              "args": {
+                "onTap": "${goBack()}",
+                "child": {
+                  "type": "material_icon",
+                  "args": {
+                    "icon": "arrow_backward"
+                  }
+                }
+              }
+            },
+            "actions": [
+              {
+                "type": "material_icon",
+                "args": {
+                  "icon": "menu"
+                }
+              }
+            ],
+            "bottom": {
+              "type": "tab_bar",
+              "args": {
+                "tabs": [
+                  {
+                    "type": "tab",
+                    "args": {
+                      "text": {
+                        "type": "text",
+                        "args": {
+                          "data": "Designer"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "tab",
+                    "args": {
+                      "text": {
+                        "type": "text",
+                        "args": {
+                          "data": "Category"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "tab",
+                    "args": {
+                      "text": {
+                        "type": "text",
+                        "args": {
+                          "data": "Attention"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "body": {
+          "type": "center",
+          "args": {
+            "type": "single_child_scroll_view",
+            "args": {
+              "child": {
+                "type": "column",
+                "args": {
+                  "children": [
+                    {
+                      "type": "set_value",
+                      "args": {
+                        "color1": "#0000FF",
+                        "child": {
+                          "type": "container",
+                          "args": {
+                            "decoration": {
+                              "padding": 30,
+                              "borderRadius": 20,
+                              "color": "${color1}"
+                            },
+                            "child": {
+                              "type": "row",
+                              "args": {
+                                "children": [
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                  "foregroundImage": {
+                                                    "type": "network_image",
+                                                    "args": {
+                                                      "src": "https://icon-library.com/images/icon-profile/icon-profile-1.jpg"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "David Borg"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Main Designer"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "403"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Follows"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "4708"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Like"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "100"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Shares"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "align",
+                                          "args": {
+                                            "alignment": "topRight",
+                                            "child": {
+                                              "type": "material_icon",
+                                              "args": {
+                                                "icon": "more_horiz"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "column",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "1"
+                                                }
+                                              },
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "Ranking"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "set_value",
+                      "args": {
+                        "color2": "#FF9933",
+                        "child": {
+                          "type": "container",
+                          "args": {
+                            "decoration": {
+                              "padding": 30,
+                              "borderRadius": 20,
+                              "color": "${color2}"
+                            },
+                            "child": {
+                              "type": "row",
+                              "args": {
+                                "children": [
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                  "foregroundImage": {
+                                                    "type": "network_image",
+                                                    "args": {
+                                                      "src": "https://icon-library.com/images/icon-profile/icon-profile-1.jpg"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Mark"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Grafic Designer"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "760"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Follows"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "3309"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Like"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "99"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Shares"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "align",
+                                          "args": {
+                                            "alignment": "topRight",
+                                            "child": {
+                                              "type": "material_icon",
+                                              "args": {
+                                                "icon": "more_horiz"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "column",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "2"
+                                                }
+                                              },
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "Ranking"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "set_value",
+                      "args": {
+                        "color3": "#FF0000",
+                        "child": {
+                          "type": "container",
+                          "args": {
+                            "decoration": {
+                              "padding": 30,
+                              "borderRadius": 20,
+                              "color": "${color3}"
+                            },
+                            "child": {
+                              "type": "row",
+                              "args": {
+                                "children": [
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                  "foregroundImage": {
+                                                    "type": "network_image",
+                                                    "args": {
+                                                      "src": "https://icon-library.com/images/icon-profile/icon-profile-1.jpg"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Jerry Cool West"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Main Editor"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "270"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Follows"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "360"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Like"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "99"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Shares"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "align",
+                                          "args": {
+                                            "alignment": "topRight",
+                                            "child": {
+                                              "type": "material_icon",
+                                              "args": {
+                                                "icon": "more_horiz"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "column",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "3"
+                                                }
+                                              },
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "Ranking"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "set_value",
+                      "args": {
+                        "color4": "#6600FF",
+                        "child": {
+                          "type": "container",
+                          "args": {
+                            "decoration": {
+                              "padding": 30,
+                              "borderRadius": 20,
+                              "color": "${color4}"
+                            },
+                            "child": {
+                              "type": "row",
+                              "args": {
+                                "children": [
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                  "foregroundImage": {
+                                                    "type": "network_image",
+                                                    "args": {
+                                                      "src": "https://icon-library.com/images/icon-profile/icon-profile-1.jpg"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Ashton"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Promoter"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "600"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Follows"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "150"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Like"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "700"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Shares"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "align",
+                                          "args": {
+                                            "alignment": "topRight",
+                                            "child": {
+                                              "type": "material_icon",
+                                              "args": {
+                                                "icon": "more_horiz"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "column",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "4"
+                                                }
+                                              },
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "Ranking"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "set_value",
+                      "args": {
+                        "color5": "#66FF66",
+                        "child": {
+                          "type": "container",
+                          "args": {
+                            "decoration": {
+                              "padding": 30,
+                              "borderRadius": 20,
+                              "color": "${color5}"
+                            },
+                            "child": {
+                              "type": "row",
+                              "args": {
+                                "children": [
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                  "foregroundImage": {
+                                                    "type": "network_image",
+                                                    "args": {
+                                                      "src": "https://icon-library.com/images/icon-profile/icon-profile-1.jpg"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "David Borg"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Best Seller"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "503"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Follows"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "2057"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Like"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              {
+                                                "type": "column",
+                                                "args": {
+                                                  "children": [
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "3"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "args": {
+                                                        "data": "Shares"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "args": {
+                                      "children": [
+                                        {
+                                          "type": "align",
+                                          "args": {
+                                            "alignment": "topRight",
+                                            "child": {
+                                              "type": "material_icon",
+                                              "args": {
+                                                "icon": "more_horiz"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "column",
+                                          "args": {
+                                            "children": [
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "5"
+                                                }
+                                              },
+                                              {
+                                                "type": "text",
+                                                "args": {
+                                                  "data": "Ranking"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
