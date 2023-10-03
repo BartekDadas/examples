@@ -1,0 +1,235 @@
+{
+  "type": "set_value",
+  "args": {
+    "backColor": "#EDEDFA",
+    "child": {
+      "type": "scaffold",
+      "args": {
+        "body": {
+          "type": "center",
+          "args": {
+            "child": {
+              "type": "column",
+              "args": {
+                "children": [
+                  {
+                    "type": "container",
+                    "args": {
+                      "decoration": {
+                        "shape": "rectangle",
+                        "borderRadius": 20,
+                        "color": "#FFFEEF"
+                      },
+                      "child": {
+                        "type": "column",
+                        "args": {
+                          "children": [
+                            {
+                              "type": "align",
+                              "args": {
+                                "align": "topLeft",
+                                "child": {
+                                  "type": "rich_text",
+                                  "args": {
+                                    "child": {
+                                      "type": "text_span",
+                                      "args": {
+                                        "text": {
+                                          "data": "Stay logged in"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "set_value",
+                              "args": {
+                                "flag1": true,
+                                "child": {
+                                  "type": "align",
+                                  "args": {
+                                    "align": "centerRight",
+                                    "child": {
+                                      "type": "switch",
+                                      "value": "${flag1}",
+                                      "onChanged": "${onChanged(flag1)}"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "args": {
+                      "decoration": {
+                        "shape": "rectangle",
+                        "borderRadius": 20,
+                        "color": "#FFFEEF"
+                      },
+                      "child": {
+                        "type": "column",
+                        "args": {
+                          "children": [
+                            {
+                              "type": "align",
+                              "args": {
+                                "align": "topLeft",
+                                "child": {
+                                  "type": "rich_text",
+                                  "args": {
+                                    "child": {
+                                      "type": "text_span",
+                                      "args": {
+                                        "text": {
+                                          "data": "System theme"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "set_value",
+                              "args": {
+                                "flag2": false,
+                                "child": {
+                                  "type": "align",
+                                  "args": {
+                                    "align": "centerRight",
+                                    "child": {
+                                      "type": "switch",
+                                      "value": "${flag2}",
+                                      "onChanged": "${onChanged(flag2)}"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "args": {
+                      "decoration": {
+                        "shape": "rectangle",
+                        "borderRadius": 20,
+                        "color": "#FFFEEF"
+                      },
+                      "child": {
+                        "type": "column",
+                        "args": {
+                          "children": [
+                            {
+                              "type": "align",
+                              "args": {
+                                "align": "topLeft",
+                                "child": {
+                                  "type": "rich_text",
+                                  "args": {
+                                    "child": {
+                                      "type": "text_span",
+                                      "child": {
+                                        "text": {
+                                          "data": "Allow aproximate localization"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "set_value",
+                              "args": {
+                                "flag3": true,
+                                "child": {
+                                  "type": "align",
+                                  "args": {
+                                    "align": "centerRight",
+                                    "child": {
+                                      "type": "switch",
+                                      "value": "${flag3}",
+                                      "onChanged": "${onChanged(flag3)}"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "container",
+                    "args": {
+                      "decoration": {
+                        "shape": "rectangle",
+                        "borderRadius": 20,
+                        "color": "#FFFEEF"
+                      },
+                      "child": {
+                        "type": "column",
+                        "args": {
+                          "children": [
+                            {
+                              "type": "align",
+                              "args": {
+                                "align": "topLeft",
+                                "child": {
+                                  "type": "rich_text",
+                                  "args": {
+                                    "child": {
+                                      "type": "text",
+                                      "args": {
+                                        "text": {
+                                          "data": "Allow Email Notification"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "set_value",
+                              "args": {
+                                "flag4": false,
+                                "child": {
+                                  "type": "align",
+                                  "args": {
+                                    "align": "centerRight",
+                                    "child": {
+                                      "type": "switch",
+                                      "value": "${flag4}",
+                                      "onChanged": "${onChanged(flag4)}"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
