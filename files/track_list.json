@@ -42,7 +42,7 @@
                                                         }
                                                     },
                                                     "child" : {
-                                                        "type" : "list_title",
+                                                        "type" : "list_tile",
                                                         "args" : {
                                                             "title" : {
                                                                 "type" : "text",
@@ -74,7 +74,7 @@
                                                         }
                                                     },
                                                     "child" : {
-                                                        "type" : "list_title",
+                                                        "type" : "list_tile",
                                                         "args" : {
                                                             "title" : {
                                                                 "type" : "text",
@@ -106,7 +106,7 @@
                                                         }
                                                     },
                                                     "child" : {
-                                                        "type" : "list_title",
+                                                        "type" : "list_tile",
                                                         "args" : {
                                                             "title" : {
                                                                 "type" : "text",
@@ -138,7 +138,7 @@
                                                         }
                                                     },
                                                     "child" : {
-                                                        "type" : "list_title",
+                                                        "type" : "list_tile",
                                                         "args" : {
                                                             "title" : {
                                                                 "type" : "text",
@@ -170,7 +170,7 @@
                                                         }
                                                     },
                                                     "child" : {
-                                                        "type" : "list_title",
+                                                        "type" : "list_tile",
                                                         "args" : {
                                                             "title" : {
                                                                 "type" : "text",
