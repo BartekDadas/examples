@@ -1,0 +1,268 @@
+{
+  "type" : "scaffold",
+  "args" : {
+    "body" : {
+      "type" : "network_image",
+      "args" : {
+        "src" : "https://media.istockphoto.com/photos/european-restaurant-in-bright-colors-picture-id530405077?k=6&m=530405077&s=170667a&w=0&h=laArQx92tc6R4f8viE3NYvzwwhJSsuy0pouBW2Gl4Zk=",
+        "alignment" : "center",
+        "height" : 1000,
+        "fit" : "fitHeight"
+      }
+    },
+    "drawer" : {
+      "type"  : "drawer",
+      "args" : {
+        "backgroundColor" : "00000000",
+        "child" : {
+          "type" : "column",
+          "args" : {
+            "children" : [
+              {
+                "type" : "network_image",
+                "args" : {
+                  "src" : "https://www.pngall.com/wp-content/uploads/8/Restaurant-Logo-PNG-Image-HD.png",
+                  "height" : 250,
+                  "weight" : 250
+                }
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                    "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/old-phone-3909347-3239895.png?f=webp&w=256",
+                            "height" : 20, 
+                            "weight" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Kontakt"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+                
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                     "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/menu-4263719-3540822.png?f=webp&w=256",
+                            "height" : 20,
+                            "width" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Menu"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                    "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-256-thumb/restaurant-menu-4274507-3544412.png?f=webp&w=256",
+                            "width" : 20,
+                            "height" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Specials"
+                          }
+                        } 
+                      ]
+                    }
+                  }
+                }
+                
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                    "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/food-truck-4274480-3544385.png?f=webp&w=256",
+                            "height" : 20, 
+                            "width" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Our Suppliers"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                    "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/table-8991707-7419166.png?f=webp&w=256",
+                            "height" : 20,
+                            "width" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Reserv a table"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                     "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/take-away-4760658-3955437.png?f=webp&w=256",
+                            "height" : 20,
+                            "width" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Order takeout"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [30, 10, 0, 0],
+                  "child" : {
+                    "type" : "row",
+                    "args" : {
+                      "children" : [
+                        {
+                          "type" : "network_image",
+                          "args" : {
+                            "src" : "https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-4377135-3637091.png?f=webp&w=256",
+                            "height" : 20,
+                            "width" : 20
+                          }
+                        },
+                        {
+                          "type" : "sized_box",
+                          "args" : {
+                            "width" : 5
+                          }
+                        },
+                        {
+                          "type" : "text",
+                          "args" : {
+                            "text" : "Settings"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
