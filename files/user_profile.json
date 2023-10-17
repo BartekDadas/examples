@@ -1,0 +1,296 @@
+{
+    "type" : "set_value",
+    "args" : {
+        "abColor" : "FF0FF0",
+        "bnbColor" : "EACFFD",
+        "child" : {
+            "type" : "scaffold",
+            "args" : {
+                "backgroundColor" : "660066",
+                "appBar" : {
+                    "type" : "app_bar",
+                    "args" : {
+                        "title" : {
+                            "type" : "text",
+                            "args" : {
+                                "text" : "User: Jack Logan"
+                            }
+                        }
+                    }
+                },
+                "body": {
+                    "type" : "center",
+                    "args" : {
+                        "child" : {
+                            "type" : "list_view",
+                            "args" : {
+                                "children" : [
+                                    {
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [10, 10, 10, 0],
+                                            "child" : {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "heigth" : 100,
+                                                    "decoration" : {
+                                                        "color" : "6666FF",
+                                                        "border" : {
+                                                            "color" : "FFFFFF",
+                                                            "width" : 3
+                                                        },
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 30
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "padding" : [8, 12, 8, 12],
+                                                            "child" : {
+                                                                "type" : "list_tile",
+                                                                "args" : {
+                                                                    "title" : {
+                                                                        "type" : "text",
+                                                                        "args" : {
+                                                                            "text" : "First and Last Name:\nJack Logan",
+                                                                            "style" : {
+                                                                                "color" : "FFFFFF",
+                                                                                "fontWeight" : "bold",
+                                                                                "fontSize" : 22
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }   
+                                    },
+                                    {
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [10, 10, 10, 0],
+                                            "child" : {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "heigth" : 100,
+                                                    "decoration" : {
+                                                        "color" : "b3b300",
+                                                        "border" : {
+                                                            "color" : "FFFFFF",
+                                                            "width" : 3
+                                                        },
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 30
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "padding" : [8, 12, 8, 12],
+                                                            "child" : {
+                                                                "type" : "list_tile",
+                                                                "args" : {
+                                                                    "title" : {
+                                                                        "type" : "text",
+                                                                        "args" : {
+                                                                            "text" : "Country: USA",
+                                                                            "style" : {
+                                                                                "color" : "FFFFFF",
+                                                                                "fontWeight" : "bold",
+                                                                                "fontSize" : 22
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }    
+                                    },
+                                    {
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [10, 10, 10, 0],
+                                            "child" : {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "heigth" : 100,
+                                                    "decoration": {
+                                                        "color" : "00CC00",
+                                                        "border" : {
+                                                            "color" : "FFFFFF",
+                                                            "width" : 3
+                                                        },
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 30
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "padding" : [8, 12, 8, 12],
+                                                            "child" : {
+                                                                "type" : "list_tile",
+                                                                "args" : {
+                                                                    "title" : {
+                                                                        "type" : "text",
+                                                                        "args" : {
+                                                                            "text" : "Gender: M",
+                                                                            "style" : {
+                                                                                "color" : "FFFFFF",
+                                                                                "fontWeight" : "bold",
+                                                                                "fontSize" : 22
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }           
+                                    },
+                                    {
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [10, 10, 10, 0],
+                                            "child": {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "heigth" : 100,
+                                                    "decoration" : {
+                                                        "color" : "FF9933",
+                                                        "border" : {
+                                                            "color" : "FFFFFF",
+                                                            "width" : 3
+                                                        },
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 30
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "padding" : [8, 12, 8, 12],
+                                                            "child" : {
+                                                                "type" : "list_tile",
+                                                                "args" : {
+                                                                    "title" : {
+                                                                        "type" : "text",
+                                                                        "args" : {
+                                                                            "text" : "Original Nationality: Irak",
+                                                                            "style" : {
+                                                                                "color" : "FFFFFF",
+                                                                                "fontWeight" : "bold",
+                                                                                "fontSize" : 22
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {   
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [10, 10, 10, 0],
+                                            "child" : {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "heigth" : 100,
+                                                    "decoration" : {
+                                                        "color" : "66CCFF",
+                                                        "border" : {
+                                                            "color" : "FFFFFF",
+                                                            "width" : 3
+                                                        },
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 30
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "padding",
+                                                        "args" : {
+                                                            "padding" : [8, 12, 8, 12],
+                                                            "child" : {
+                                                                "type" : "list_tile",
+                                                                "args" : {
+                                                                    "title" : {
+                                                                        "type" : "text",
+                                                                        "args" : {
+                                                                            "text" : "Accout Creation Date: 12-08-2019",
+                                                                            "style" : {
+                                                                                "color" : "FFFFFF",
+                                                                                "fontWeight" : "bold",
+                                                                                "fontSize" : 22
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }, 
+                "bottomNaviagtionBar" : {
+                    "type" : "bottom_navigation_bar",
+                    "args" : {
+                        "selectedItemColor" : "${bnbColor}",
+                        "onTap" : "${change(index)}",
+                        "currentIndex" : "${curr}",
+                        "actions" : [
+                            {
+                                "type" : "bottom_navigation_bar_item",
+                                "args" : {
+                                    "label" : "Home",
+                                    "icon" : {
+                                        "type" : "material_icon",
+                                        "args" : {
+                                            "icon" : "home"
+                                        }
+                                    }
+                                }
+                            }, 
+                            {
+                                "type" : "bottom_navigation_bar_item",
+                                "args" : {
+                                    "label" : "Library",
+                                    "icon" : {
+                                        "type" : "material_icon",
+                                        "args" : {
+                                            "icon" : "bookmarks"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
