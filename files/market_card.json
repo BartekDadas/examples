@@ -1,10 +1,12 @@
 {
-    "set_value": {
+    "type" : "set_value",
+    "args": {
         "backcolor" : "FFFFFE",
         "button_color" : "0000FF",
         "child" : {
             "type" : "scaffold",
             "args" : {
+                "backgroundColor" : "3366ff",
                 "body" : {
                     "type" : "center",
                     "args" : {
@@ -12,57 +14,169 @@
                             "type" :   "column",
                             "args" : {
                                 "children" : [
-                                    {
-                                        "type" : "network_image",
-                                        "args" : {}
-                                    },
-                                    {
-                                        "type" : "column",
+                                    {   
+                                        "type" : "padding",
                                         "args" : {
-                                            "children" : [
-                                                {
-                                                    "type" : "elevated_button",
-                                                    "args" : {
-                                                        "style" : {
-                                                            "backgroundColor" : "${button_color}"
-                                                        },
-                                                        "child" : {
-                                                            "type" : "text",
-                                                            "args" : {
-                                                                "data" : "Add to Card"
-                                                            }
-                                                        }   
-                                                    }
-                                                },
-                                                {
-                                                    "type" : "elevated_button",
-                                                    "args" : {
-                                                        "style" : {
-                                                            "backgroundColor" : "${button_color}"
-                                                        },
-                                                        "child" : {
-                                                            "type" : "text",
-                                                            "args" : {
-                                                                "data" : "Buy Now"
-                                                            }
+                                            "padding" : 20,
+                                            "child" : {
+                                                "type" : "clip_rrect",
+                                                "args" : {
+                                                    "borderRadius" : 20,
+                                                    "child" : {
+                                                        "type" : "network_image",
+                                                        "args" : {
+                                                            "src" : "https://cws.com.pl/image,offer,3488,7650,1920,1920,0.png"
                                                         }
                                                     }
-                                                },
-                                                {
-                                                    "type" : "elevated_button",
-                                                    "args" : {
-                                                        "style" : {
-                                                            "backgroundColor" : "${button_color}"
-                                                        },
-                                                        "child" : {
-                                                            "type" : "text",
-                                                            "args" : {
-                                                                "data" : "Go Back"
-                                                            }
+                                                }                                              
+                                            }
+                                        }  
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "constraints" : {
+                                                "maxWidth" : 140
+                                            },
+                                            "child" : {
+                                                "type" : "elevated_button",
+                                                "args" : {
+                                                    "onPressed" : "${showNothing()}",
+                                                    "style" : {
+                                                        "backgroundColor" : "CCFFCC"
+                                                    },
+                                                    "child" : {
+                                                        "type" : "row",
+                                                        "args" : {
+                                                            "children" : [
+                                                                {
+                                                                    "type" : "material_icon",
+                                                                    "listener" : [
+                                                                        "key"
+                                                                    ],
+                                                                    "args" : {
+                                                                        "icon" : "add_shopping_cart",
+                                                                        "color" : "000000"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "sized_box",
+                                                                    "args" : {
+                                                                        "width" : 5
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "text",
+                                                                    "args" : {
+                                                                        "text" : "Add to Cart",
+                                                                        "style" : {
+                                                                            "color" : "000000"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }  
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "constraints" : {
+                                                "maxWidth" : 140
+                                            },
+                                            "child" : {
+                                                "type" : "elevated_button",
+                                                "args" : {
+                                                    "onPressed" : "${showNothing()}",
+                                                    "style" : {
+                                                        "backgroundColor" : "CCFFCC"
+                                                    },
+                                                    "child" : {
+                                                        "type" : "row",
+                                                        "args" : {
+                                                            "children" : [
+                                                                {
+                                                                    "type" : "material_icon",
+                                                                    "listener" : [
+                                                                        "key"
+                                                                    ],
+                                                                    "args" : {
+                                                                        "icon" : "payments",
+                                                                        "color" : "000000"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "sized_box",
+                                                                    "args" : {
+                                                                        "width" : 5
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "text",
+                                                                    "args" : {
+                                                                        "text" : "Buy now",
+                                                                        "style" : {
+                                                                            "color" : "000000"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     }
                                                 }
-                                            ]
+                                            }
+                                        }             
+                                    },
+                                    {
+                                        "type" : "container",
+                                        "args" : {
+                                            "constraints" : {
+                                                "maxWidth" : 140
+                                            },
+                                            "child" : {
+                                                "type" : "elevated_button",
+                                                "args" : {
+                                                    "onPressed" : "${showNothing()}",
+                                                    "style" : {
+                                                        "backgroundColor" : "CCFFCC"
+                                                    },
+                                                    "child" : {
+                                                        "type" : "row",
+                                                        "args" : {
+                                                            "children" : [
+                                                                {
+                                                                    "type" : "material_icon",
+                                                                    "listener" : [
+                                                                        "key"
+                                                                    ],
+                                                                    "args" : {
+                                                                        "icon" : "arrow_back",
+                                                                        "color" : "000000"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "sized_box",
+                                                                    "args" : {
+                                                                        "width" : 5
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type" : "text",
+                                                                    "args" : {
+                                                                        "text" : "Go Back",
+                                                                        "style" : {
+                                                                            "color" : "000000"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 ]
