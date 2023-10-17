@@ -1,363 +1,558 @@
 {
-    "type" : "set_value",
-    "args" : {
-        "bgColor" : "CCCAAD", 
-        "child" : {
-            "type" : "scaffold",
-            "args" : {
-                "body" : {
-                    "type" : "list_view",
-                    "args" : {
-                        "children" : [
-                            {
-                                "type" : "row",
-                                "args" : {
-                                        "children" : [
-                                            {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding": 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "person"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Profile"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "groups"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Groups"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type" : "row",
-                                "args" : {
-                                    "children" : [
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "bookmark"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Favorites"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "Your Activity History"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "history"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ] 
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type" : "row",
-                                "args" : {
-                                    "children" : [ 
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "settings"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Settings"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" :{
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "manage_search"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Search"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ] 
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type" : "row",
-                                "args" : {
-                                    "children" : [ 
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "edit"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Edit"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "credit_card"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Subscription"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ] 
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type" : "row",
-                                "args" : {
-                                    "children" : [ 
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "pantool"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Support"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ]
-                                                    }   
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type" : "container",
-                                            "args" : {
-                                                "decoration" : {
-                                                    "shape" : "rectangle",
-                                                    "padding" : 5
-                                                },
-                                                "child" : {
-                                                    "type" : "row",
-                                                    "args" : {
-                                                        "children" : [
-                                                            {
-                                                                "type" : "material_icon",
-                                                                "args" : {
-                                                                    "icon" : "logout"
-                                                                }
-                                                            },
-                                                            {
-                                                                "type" : "list_title",
-                                                                "args" : {
-                                                                    "text" : {
-                                                                        "type" : "text",
-                                                                        "data" : "Log out"
-                                                                    }
-                                                                }
-                                                            }
-                                                        ] 
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            } 
-                        ]
-                    }
+  "type" : "set_value",
+  "args" : {
+      "bgColor" : "CCCAAD", 
+      "child" : {
+          "type" : "scaffold",
+          "args" : {
+            "backgroundColor" : "33334d",
+              "appBar" : {
+                "type" : "app_bar",
+                "args" : {
+                  "backgroundColor" : "FF5050"
                 }
+              },
+              "body" : {
+                "type" : "padding",
+                "args" : {
+                  "padding" : [10, 10, 0,10],
+                  "child" : {
+                    "type" : "grid_view",
+                    "args" : {
+                      "gridDelegate" : {
+                        "childAspectRatio": 1.5,
+                        "crossAxisSpacing": 16.0,
+                        "mainAxisSpacing": 12.0,
+                        "maxCrossAxisExtent": 300,
+                        "type": "max_cross_axis_extent"
+                      }, 
+                      "children" : [
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : 10,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Licenses",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "library_books",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : 10,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Account",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "account_circle",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 40
+                                    },
+                                    "padding" : 5,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Favourites",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "favorite",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : [20, 10, 10, 10],
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Share",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "share",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                              "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                  "child" : {
+                                          "type": "container",
+                                      "args" : {
+                                        "constraints": {
+                                          "maxWidth" : 50
+                                        },
+                                        "padding" : 20,
+                                        "decoration" : {
+                                          "color" : "FF5050",
+                                          "borderRadius" : {
+                                            "type" : "circular",
+                                            "radius" : 30
+                                          }
+                                        },
+                                        "child" :{
+                                          "type" : "center",
+                                          "args" : {
+                                            "child" : {
+                                              "type" : "row",
+                                              "args" : {
+                                                "children" : [
+                                                  {
+                                                    "type" : "text",
+                                                    "args" : {
+                                                      "text" : "My List",
+                                                      "style" : {
+                                                        "color" : "FFFFFF",
+                                                        "fontSize" : 20
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "type" : "sized_box",
+                                                    "args" : {
+                                                      "width" : 10
+                                                    }
+                                                  },
+                                                  {
+                                                    "type" : "material_icon",
+                                                    "listener" : [
+                                                      "key"
+                                                    ],
+                                                    "args" : {
+                                                      "icon" : "bookmarks",
+                                                      "color" : "#FFFFFF"
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                              }
+                            }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : 10,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Premium",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "account_balance",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : 10,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Log out",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "logout",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "grid_tile",
+                          "args" : {
+                            "child" : {
+                                "type" : "padding",
+                                "args" : {
+                                  "padding" : 20,
+                                "child": {
+                                  "type" : "container",
+                                  "args" : {
+                                    "constraints" : {
+                                      "maxWidth" : 30
+                                    },
+                                    "padding" : 10,
+                                    "decoration" : {
+                                      "color" : "FF5050",
+                                      "borderRadius" : {
+                                        "type" : "circular",
+                                        "radius" : 30
+                                      }
+                                    },
+                                    "child" : {
+                                      "type" : "center",
+                                      "args" : {
+                                        "child" : {
+                                          "type" : "row",
+                                          "args" : {
+                                            "children" : [
+                                              {
+                                                "type" : "text",
+                                                "args" : {
+                                                  "text" : "Settings",
+                                                  "style" : {
+                                                    "color" : "FFFFFF",
+                                                    "fontSize" : 20
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type" : "sized_box",
+                                                "args" : {
+                                                  "width" : "10"
+                                                }
+                                              },
+                                              {
+                                                "type" : "material_icon",
+                                                "listener" : [
+                                                  "key"
+                                                ],
+                                                "args"  : {
+                                                  "icon": "settings",
+                                                  "color" : "FFFFFF"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }       
+                ]
+              }
             }
-        }
+          }
+        }          
+      }
     }
+  }                  
 }
