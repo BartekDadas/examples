@@ -1,87 +1,271 @@
 {
-  "type" : "set_value",
-  "args" : {
-    "btnColor": "FFAADE",
-    "child" : {
-      "type" : "scaffold",
-      "args" : {
-        "body" : {
-          "type": "column",
-          "args" : {
-            "children" : [
-              {
-                "type" : "center",
+    "type" : "set_value",
+    "args" : {
+      "btnColor": "FFAADE",
+      "child" : {
+        "type" : "scaffold",
+        "args" : {
+          "backgroundColor" : "FF33CC",
+          "appBar" : {
+            "type" : "app_bar",
+            "args" : {
+              "backgroundColor" : "CC33FF"
+            }
+          },
+          "body" : {
+            "type" : "padding",
+            "args" : {
+              "padding" : [0, 100, 0, 30],
+              "child" : {
+                "type": "column",
                 "args" : {
-                  "child" : {
-                    "type" : "circle_avatar",
-                    "args" : {
-                      "backgroundImage" : {
-                        "type" : "network_image",
-                        "args" : {
-                          "src" : "https://purepng.com/public/uploads/large/purepng.com-user-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596134a4bio.png"
+                  "mainAxisAlignment":"spaceBetween",
+                  "children" : [
+                    {
+                      "type" : "column",
+                      "args" : {
+                        "children" : [
+                          {
+                            "type" : "circle_avatar",
+                            "args" : {
+                              "radius": 130,
+                              "foregroundImage" : {
+                                "type" : "network_image",
+                                "args" : {
+                                  "src" : "https://purepng.com/public/uploads/large/purepng.com-user-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596134a4bio.png"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type" : "sized_box",
+                            "args" : {
+                              "height" : 30
+                            }
+                          },
+                          {
+                            "type" : "align",
+                            "args" : {
+                              "alignment" : "center",
+                              "child" : {
+                                "type" : "wrap",
+                                "args" : {
+                                  "children" : [
+                                    {
+                                      "type" : "circle_button",
+                                      "args" : {
+                                        "shape": "circle",
+                                        "onTap" : "${showNothing}",
+                                        "width": 50,
+                                        "height": 50,
+                                        "backgroundColor": "FFF-FFF",
+                                        "child": {
+                                          "type": "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args": {
+                                            "icon": "skip_previous",
+                                            "color" : "000000"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type" : "sized_box",
+                                      "args" : {
+                                        "width" : 10
+                                      }
+                                    },
+                                    {
+                                      "type" : "circle_button",
+                                      "args" : {
+                                        "shape" : "circle",
+                                        "onTap" : "${showNothing}",
+                                        "width" : 50,
+                                        "height" : 50,
+                                        "backgroundColor" : "FFF-FFF",
+                                        "child" : {
+                                          "type" : "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args" : {
+                                            "icon" :  "play_arrow",
+                                            "color" : "000000"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type" : "sized_box",
+                                      "args" : {
+                                        "width" : 10
+                                      }
+                                    },
+                                    {
+                                      "type" : "circle_button",
+                                      "args" : {
+                                        "shape" : "circle",
+                                        "onTap" : "${showNothing}",
+                                        "width" : 50,
+                                        "height" : 50,
+                                        "backgroundColor" : "FFF-FFF",
+                                        "child" : {
+                                          "type" : "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args" : {
+                                            "icon" : "skip_next",
+                                            "color" : "000000"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type" : "padding",
+                      "args" : {
+                        "padding" : [10, 0, 10, 0],
+                        "child" : {
+                          "type" : "container",
+                          "args" : {
+                            "decoration" : {
+                              "color" : "6666FF",
+                              "border" : {
+                                "width" : 3,
+                                "color" : "9900FF"
+                              },
+                              "borderRadius" : {
+                                "type": "circular",
+                                "radius" : 20
+                              }
+                            },
+                            "child" : {
+                              "type" : "row",
+                              "args" : {
+                                "mainAxisAlignment" : "spaceBetween",
+                                "children" : [
+                                  {
+                                    "type" : "row",
+                                    "args" : {
+                                      "children" : [
+                                        {
+                                          "type" : "padding",
+                                          "args" : {
+                                            "padding" : 10,
+                                            "child" : {
+                                              "type" : "clip_rrect",
+                                              "args" : {
+                                                "borderRadius" : {
+                                                  "type" : "circular",
+                                                  "radius" : 20
+                                                },
+                                                "child" : {
+                                                  "type" : "network_image",
+                                                  "args" : {
+                                                    "src" : "https://americansongwriter.b-cdn.net/wp-content/uploads/2021/04/Fearless_Tracklist.jpg?w=768",
+                                                    "width" : 40,
+                                                    "height" : 40
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type" : "sized_box",
+                                          "args" : {
+                                            "width" : 10
+                                          }
+                                        },
+                                        {
+                                          "type" : "text",
+                                          "args" : {
+                                            "text"  : "Artysta*Piosenka",
+                                            "style" : {
+                                              "color" : "FFFFFF",
+                                              "fontSize" : 20
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "type" : "row",
+                                    "args" : {
+                                      "children" : [
+                                        {
+                                          "type" : "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args" : {
+                                            "icon" : "computer",
+                                            "color" : "FFFFFF"
+                                          }
+                                        },
+                                        {
+                                          "type" : "sized_box",
+                                          "args" : {
+                                            "width" : 8
+                                          }
+                                        },
+                                        {
+                                          "type" : "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args" : {
+                                            "icon" : "star",
+                                            "color" : "FFFFFF"
+                                          }
+                                        },
+                                        {
+                                          "type" : "sized_box",
+                                          "args" : {
+                                            "width" : 5
+                                          }
+                                        },
+                                        {
+                                          "type" : "material_icon",
+                                          "listener" : [
+                                            "key"
+                                          ],
+                                          "args" : {
+                                            "icon" : "play_arrow",
+                                            "color": "9900FF"
+                                          }
+                                        },
+                                        {
+                                          "type" : "sized_box",
+                                          "args" : {
+                                            "width" : 10
+                                          }
+                                        }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
                         }
                       }
                     }
                   }
-                }
-              },
-              {
-                "type" : "row",
-                "args" : {
-                  "children" : [
-                    {
-                      "type" : "circle_button",
-                      "args" : {
-                        "shape": "circle",
-                        "width": 15,
-                        "height": 15,
-                        "backgroundColor": "FFF-FFF",
-                        "child": {
-                          "type": "icon",
-                          "args": {
-                            "icon": "skip_previous",
-                            "color" : "000000"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type" : "circle_button",
-                      "args" : {
-                        "shape" : "circle",
-                        "width" : 15,
-                        "height" : 15,
-                        "backgroundColor" : "FFF-FFF",
-                        "child" : {
-                          "type" : "icon",
-                          "args" : {
-                            "icon" :  "play",
-                            "color" : "000000"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type" : "circle_button",
-                      "args" : {
-                        "shape" : "circle",
-                        "width" : 15,
-                        "height" : 15,
-                        "backgroundColor" : "FFF-FFF",
-                        "child" : {
-                          "type" : "icon",
-                          "args" : {
-                            "icon" : "skip_next",
-                            "color" : "000000"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
+                ]
               }
-            ]
-          }
+            } 
+          } 
         }
       }
     }
