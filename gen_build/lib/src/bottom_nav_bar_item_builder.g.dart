@@ -79,6 +79,8 @@ class BottomNavigationBarItemBuilder extends _BottomNavigationBarItemBuilder {
   }
 }
 
+
+
 class JsonBottomNavigationBarItem extends JsonWidgetData {
   JsonBottomNavigationBarItem({
     Map<String, dynamic> args = const {},

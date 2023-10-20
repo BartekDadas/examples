@@ -1,198 +1,38 @@
 {
-"$schema" : "http://json-schema.org/draft-06/schema#",
-"$id" : "https://bartekdadas.github.io/schemas/bottom_nav_bar_schema.json",
-"$comment" : "https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html",
-"type" : "object",
-"title" : "BottomNavigationBar",
-"additionalItems": false,
-"properties": {
-        "backgroundColor" : {
-        "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "currentIndex" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            }
-        ]
-        },
-        "elevation" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            }
-        ]
-        },
-        "enableFeedback" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            },
-            {
-            "type": "boolean"
-            }
-        ]
-        },
-        "fixedColor" : {
-        "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "iconSize" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            }
-        ]
-        },
-        "items" : {
-        "anyOf": [
-            {
-                "type": "string"
-            },
-            {
-                "type": "array",
-                "items": {
-                    "$ref": "https://bartekdadas.github.io/schemas/bottom_nav_bar_item_schema.json"
-                }
-            }
-            ]
-        },
-        "landscapeLayout" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_landscape_layout.json"
-            }
-        ]
-        },
-        "mouseCursor" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/mouse_cursor.json"
-            }
-        ]
-        },
-        "onTap" : {
-            "type": "string"
-        },
-        "selectedFontSize" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            }
-        ]
-        },
-        "selectedIconTheme" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/icon_theme_data.json"
-            }
-        ]
-        },
-        "selectedItemColor" : {
-        "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "selectedLabelStyle" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-            }
-        ]
-        },
-        "showSelectedLabels" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            },
-            {
-            "type": "boolean"
-            }
-        ]
-        },
-        "showUnselectedLabels" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            },
-            {
-            "type": "boolean"
-            }
-        ]
-        },
-        "type" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_type.json"
-            }
-        ]
-        },
-        "unselectedFontSize" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "type": "number"
-            }
-        ]
-        },
-        "unselectedIconTheme" : {
-        "anyOf": [
-            {
-            "type": "string"
-            },
-            {
-            "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/icon_theme_data.json"
-            }
-        ]
-        },
-        "unselectedItemColor" : {
-            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "unselectedLabelStyle" : {
-            "anyOf": [
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "$id" : "https://bartekdadas.github.io/schemas/bottom_bar_item.json",
+    "$comment" : "https://github.com/Mindinventory/animated_notch_bottom_bar/tree/4834edd18be3e1d32d9b813cd10941dcf4f39ce8",
+    "type" : "object",
+    "title" : "BottomBarItem",
+    "additionalItems": false,
+    "properties": {
+        "inActiveItem" : {
+            "args" : [
                 {
-                "type": "string"
+                    "type" : "string"
                 },
                 {
-                "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+                    "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
                 }
             ]
-        }
+        },
+        "activeItem" : {
+            "args" : [
+                {
+                    "type" : "string"
+                },
+                {
+                    "$ref" : "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+                }
+            ]
+        },
+        "itemLabel" : {
+            "args" : [
+                {
+                    "type" : "string"
+                }
+            ]
+        }   
     }
 }
   

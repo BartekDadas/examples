@@ -1,0 +1,41 @@
+{
+  "type" : "scaffold",
+  "args" : {
+    "" : "",
+    "body" : {
+      "type" : "column",
+      "args" : {
+        "children" : [
+          {
+            "type": "align",
+            "args" : {
+              "alignment" : "topLeft",
+              "child": {
+                "type" : "container",
+                "args" : {
+                  "decoration" : {
+
+                  },
+                  "child" : {
+                    "type" : "material_icons",
+                    "listener" : [
+                      "key"
+                    ],
+                    "args" : {
+                      "icon" : "arrow_backward"
+                    }
+                  }
+                }
+              } 
+            }
+          }
+        ]
+      }
+    },
+    "bottomSheet" : {
+      "type" : "bottom_sheet",
+      "args" : {
+      }
+    }
+  }
+}

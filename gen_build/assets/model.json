@@ -1,84 +1,107 @@
 {
-  "type": "scaffold",
-  "args": {
-    "appBar": {
-      "type": "app_bar",
-      "args": {
-        "title": {
-          "type": "text",
-          "args": {
-            "text": "AnimatedPositioned"
-          }
-        }
-      }
-    },
-    "body": {
-      "type": "set_value",
-      "args": {
-        "values": {
-          "customHeight": 40
-        },
+    "type": "set_value",
+    "args": {
+        "btnColor": "#FFAADE",
         "child": {
-          "type": "stack",
-          "args": {
-            "children": [
-              {
-                "type" : "preferred_size",
-                "args" : {
-                  "preferredSize" : "${size}",
-                  "child" : {
-                    "type" : "container",
+            "type": "scaffold",
+            "args": {
+                "body": {
+                    "type": "center",
                     "args": {
-                      "color" : "FF0000"
+                        "child": {
+                            "type": "column",
+                            "args": {
+                                "children": [
+                                    {
+                                        "type": "center",
+                                        "args": {
+                                            "child": {
+                                                "type": "circle_avatar",
+                                                "args": {
+                                                    "backgroundImage": {
+                                                        "type": "network_image",
+                                                        "args": {
+                                                            "src": "https://purepng.com/public/uploads/large/purepng.com-user-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596134a4bio.png"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "row",
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "type": "circle_button",
+                                                    "args": {
+                                                        "onTap": "${set_value('color', '000000')}",
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        
+                                                        "child": {
+                                                         
+                                                                "type": "material_icon",
+                                                                "listen" : [
+                                                                    "key"
+                                                                ],
+                                                                "args": {
+                                                                  
+                                                                  "icon": "arrow_up"
+                                                                  
+                                                                }
+                                                            
+                                                            }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "circle_button",
+                                                    "args": {
+                                                        "onTap": "${set_value('color', '000000')}",
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        "child": {
+                                                                    "type": "material_icon",
+                                                                    "listen": [
+                                                                        "key"
+                                                                    ],
+                                                                    "args": {
+                                                                        "icon": "arrow_up"
+                                                                    }
+                                                                
+                                                            
+                                                                
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "circle_button",
+                                                    "args": {
+                                                        "onTap": "${set_value('color', '000000')}",
+                                                        "width": 150,
+                                                        "height": 150,
+                                                        "child": {
+                                                            
+                                                                    "type": "material_icon",
+                                                                    "listen" : [
+                                                                        "key"
+                                                                    ],
+                                                                     "args": {
+                                                                        "icon": "arrow_up"
+                                                                    }
+                                                                }
+                                                            
+                                                    }
+                                                }              
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
-                  }
                 }
-              }
-            ]
-          }
+            }
         }
-      }
-    },
-    "bottomNavigationBar" : {
-      "type": "cupertino_tab_bar",
-      "args": {
-        "items": [
-          {
-            "bottomNavigationBarItem": {
-              "type": "bottom_navigation_bar_item",
-              "args": {
-                "label": "Icon1",
-                "icon": {
-                  "type": "icon",
-                  "args": {
-                    "icon": {
-                      "codePoint": 58712,
-                      "fontFamily": "MaterialIcons"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          {
-            "bottomNavigationBarItem": {
-              "type": "bottom_navigation_bar_item",
-              "args": {
-                "label": "Icon2",
-                "icon": {
-                  "type": "icon",
-                  "args": {
-                    "icon": {
-                      "codePoint": 984245,
-                      "fontFamily": "MaterialIcons"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        ]
-      }
     }
-  }
 }

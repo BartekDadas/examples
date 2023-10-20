@@ -64,7 +64,7 @@ class BottomNavigationBarBuilder extends _BottomNavigationBarBuilder {
       enableFeedback: model.enableFeedback,
       fixedColor: model.fixedColor,
       iconSize: model.iconSize,
-      items: model.items,
+      items: decodeItems(model.items, childBuilder, context),
       key: key,
       landscapeLayout: model.landscapeLayout,
       mouseCursor: model.mouseCursor,
@@ -85,22 +85,19 @@ class BottomNavigationBarBuilder extends _BottomNavigationBarBuilder {
   }
 }
 
-late List mapItems;
-List<BottomNavigationBarItem> decodeItems(
-  List<BottomNavigationBarItem> items, 
-  BuildContext context, 
-  ChildWidgetBuilder? childBuilder, 
-  JsonWidgetData data) {
-  for(var i= 0; i< mapItems.length; i++) {
-    var model = BottomNavigationBarItemBuilderModel.fromDynamic(mapItems[i]["bottomNavigationBarItem"]["args"]);
+late List botItems;
+List<BottomNavigationBarItem> decodeItems(List<BottomNavigationBarItem> items,ChildWidgetBuilder? childBuilder, BuildContext context) {
+  for(int i = 0; i < botItems.length; i++) {
+    BottomNavigationBarItemBuilderModel model = BottomNavigationBarItemBuilderModel.fromDynamic(botItems[i]['bottomNavigationBarItem']['args']);
     items.add(
       BottomNavigationBarItem(
-        icon: model.icon.build(context: context, childBuilder: childBuilder),
+        icon: model.icon.build(context: context),
         activeIcon: model.activeIcon?.build(context: context),
         backgroundColor: model.backgroundColor,
         label: model.label,
         tooltip: model.tooltip,
-      ));
+      )
+    );
   }
   return items;
 }
@@ -734,10 +731,10 @@ class BottomNavigationBarBuilderModel extends JsonWidgetBuilderModel {
             return parsed;
           }(),
           items: () {
-            mapItems = map["items"];
-            List<BottomNavigationBarItem> list = [];
-            return list;
-          } (),
+            botItems = map['items'];
+            List<BottomNavigationBarItem> items = [];
+            return items;
+          }(),
           landscapeLayout: () {
             dynamic parsed =
                 ThemeDecoder.decodeBottomNavigationBarLandscapeLayout(
@@ -899,7 +896,7 @@ class BottomNavigationBarBuilderModel extends JsonWidgetBuilderModel {
 
 class BottomNavigationBarSchema {
   static const id =
-      'https://peiffer-innovations.github.io/flutter_json_schemas/schemas/gen_build/bottom_navigation_bar.json';
+      'https://bartekdadas.github.io/schemas/bottom_nav_bar_schema.json';
 
   static final schema = <String, Object>{
     r'$schema': 'http://json-schema.org/draft-07/schema#',

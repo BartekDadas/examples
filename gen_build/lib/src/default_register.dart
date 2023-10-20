@@ -1,3 +1,4 @@
+import 'package:gen_build/src/bottom_bar_item_builder.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'builders.dart';
 
@@ -22,9 +23,9 @@ abstract class _DefaultRegister {
   void withBottomNavigationBarItem();
 
   @JsonWidgetRegistration(
-    builder: 'PrefferedSizeBuilder',
-    schema: 'PrefferedSizeSchema',
-    widget: 'PrefferedSize',
+    builder: 'PreferredSizeBuilder',
+    schema: 'PreferredSizeSchema',
+    widget: 'PreferredSize',
   )
   void withPreferredSize();
 
@@ -35,4 +36,56 @@ abstract class _DefaultRegister {
   )
   void withCupertinoTabBar();
 
+  @JsonWidgetRegistration(
+    builder: 'CircleAvatarBuilder',
+    schema: 'CircleAvatarSchema', 
+    widget: 'CircleAvatar'
+  )
+  void withCircleAvatar();
+
+  @JsonWidgetRegistration(
+    builder: 'CircleButtonBuilder',
+    schema: 'CircleButtonSchema',
+    widget: 'CircleButton', 
+  )
+  void withCircleButton();
+
+  @JsonWidgetRegistration(
+     builder: 'DotNavigationBarBuilder',
+     schema: 'DotNavigationBarSchema',
+     widget: 'DotNavigationBar',
+  )
+  void withDotNavigationBar();
+
+  @JsonWidgetRegistration(
+     builder: 'DotNavigationBarItemBuilder',
+     schema: 'DotNavigationBarItemSchema',
+     widget: 'DotNavigationBarItem',
+  )
+  void withDotNavigationBarItem();
+
+  @JsonWidgetRegistration(
+    builder: 'AnimatedBottomNavigationBarBuilder', 
+    schema: 'AnimatedBottomNavigationBarSchema',
+    widget: 'AnimatedBottomNavigationBar',
+  ) 
+  void withAnimatedBottomNavigationBar();
+
+  @JsonWidgetRegistration(
+    builder: 'AnimatedNotchBottomBarBuilder',
+    schema: 'AnimatedNotchBottomBarSchema', 
+    widget: 'AnimatedNotchBottomBar',
+  )
+  void withAnimatedNotchBottomBar();
+
+  @JsonWidgetRegistration(
+    builder: 'SfSliderBuilder',
+    schema: 'SfSliderSchema',
+    widget: "SfSlider"
+  )
+  void withSfSlider();
+
 }
+  
+
+ 

@@ -65,30 +65,27 @@ class CupertinoTabBarBuilder extends _CupertinoTabBarBuilder {
       height: model.height,
       iconSize: model.iconSize,
       inactiveColor: model.inactiveColor,
-      items: decodeItems(model.items, context, childBuilder),
+      items: decodeCupItems(model.items, childBuilder, context),
       key: key,
       onTap: model.onTap,
     );
   }
-  List<BottomNavigationBarItem> decodeItems(
-    List<BottomNavigationBarItem> items, 
-    BuildContext context, 
-    ChildWidgetBuilder? childBuilder,
-    ) {
-    for(var i= 0; i< cupItems.length; i++) {
-      var model = BottomNavigationBarItemBuilderModel.fromDynamic(cupItems[i]["bottomNavigationBarItem"]["args"]);
-      items.add(
-        BottomNavigationBarItem(
-          icon: model.icon.build(context: context, childBuilder: childBuilder),
-          activeIcon: model.activeIcon?.build(context: context),
-          backgroundColor: model.backgroundColor,
-          label: model.label,
-          tooltip: model.tooltip,
-        ),
-      );
-    }
-    return items;
+}
+
+List<BottomNavigationBarItem> decodeCupItems(List<BottomNavigationBarItem> items,ChildWidgetBuilder? childBuilder, BuildContext context) {
+  for(int i = 0; i < cupItems.length; i++) {
+    BottomNavigationBarItemBuilderModel model = BottomNavigationBarItemBuilderModel.fromDynamic(cupItems[i]['bottomNavigationBarItem']['args']);
+    items.add(
+      BottomNavigationBarItem(
+        icon: model.icon.build(context: context),
+        activeIcon: model.activeIcon?.build(context: context),
+        backgroundColor: model.backgroundColor,
+        label: model.label,
+        tooltip: model.tooltip,
+      )
+    );
   }
+  return items;
 }
 
 late List cupItems;
@@ -393,9 +390,9 @@ class CupertinoTabBarBuilderModel extends JsonWidgetBuilderModel {
             return parsed;
           }(),
           items: () {
-            cupItems = map["items"];
-            List<BottomNavigationBarItem> list = [];
-            return list;
+            cupItems = map['items'];
+            List<BottomNavigationBarItem> items = [];
+            return items;
           }(),
           onTap: map['onTap'],
         );

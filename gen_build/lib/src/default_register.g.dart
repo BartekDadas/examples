@@ -16,14 +16,18 @@ class DefaultRegister extends _DefaultRegister {
   static DefaultRegister registerDefaults({JsonWidgetRegistry? registry}) {
     registry ??= JsonWidgetRegistry.instance;
     return DefaultRegister()
-      ..withBottomNavigationBar()
+      ..withAnimatedBottomNavigationBar()
+      ..withAnimatedNotchBottomBar()
+      ..withBottomBarItem()
       ..withBottomNavigationBar()
       ..withBottomNavigationBarItem()
-      ..withBottomNavigationBarItem()
+      ..withCircleButton()
       ..withCupertinoTabBar()
-      ..withCupertinoTabBar()
+      ..withDotNavigationBar()
+      ..withDotNavigationBarItem()
       ..withPreferredSize()
-      ..withPreferredSize()
+      ..withCircleAvatar()
+      ..withSfSlider()
       ..register(registry);
   }
 
@@ -38,6 +42,34 @@ class DefaultRegister extends _DefaultRegister {
     for (var s in _schemas.entries) {
       schemaCache.addSchema(s.key, s.value);
     }
+  }
+
+  void withAnimatedBottomNavigationBar() {
+    _builders[AnimatedBottomNavigationBarBuilder.kType] =
+        const JsonWidgetBuilderContainer(
+      builder: AnimatedBottomNavigationBarBuilder.fromDynamic,
+      schemaId: AnimatedBottomNavigationBarSchema.id,
+    );
+    _schemas[AnimatedBottomNavigationBarSchema.id] =
+        AnimatedBottomNavigationBarSchema.schema;
+  }
+
+  void withAnimatedNotchBottomBar() {
+    _builders[AnimatedNotchBottomBarBuilder.kType] =
+        const JsonWidgetBuilderContainer(
+      builder: AnimatedNotchBottomBarBuilder.fromDynamic,
+      schemaId: AnimatedNotchBottomBarSchema.id,
+    );
+    _schemas[AnimatedNotchBottomBarSchema.id] =
+        AnimatedNotchBottomBarSchema.schema;
+  }
+
+  void withBottomBarItem() {
+    _builders[BottomBarItemBuilder.kType] = const JsonWidgetBuilderContainer(
+      builder: BottomBarItemBuilder.fromDynamic,
+      schemaId: BottomBarItemSchema.id,
+    );
+    _schemas[BottomBarItemSchema.id] = BottomBarItemSchema.schema;
   }
 
   void withBottomNavigationBar() {
@@ -59,6 +91,14 @@ class DefaultRegister extends _DefaultRegister {
         BottomNavigationBarItemSchema.schema;
   }
 
+  void withCircleButton() {
+    _builders[CircleButtonBuilder.kType] = const JsonWidgetBuilderContainer(
+      builder: CircleButtonBuilder.fromDynamic,
+      schemaId: CircleButtonSchema.id,
+    );
+    _schemas[CircleButtonSchema.id] = CircleButtonSchema.schema;
+  }
+
   void withCupertinoTabBar() {
     _builders[CupertinoTabBarBuilder.kType] = const JsonWidgetBuilderContainer(
       builder: CupertinoTabBarBuilder.fromDynamic,
@@ -67,11 +107,49 @@ class DefaultRegister extends _DefaultRegister {
     _schemas[CupertinoTabBarSchema.id] = CupertinoTabBarSchema.schema;
   }
 
+  void withDotNavigationBar() {
+    _builders[DotNavigationBarBuilder.kType] = const JsonWidgetBuilderContainer(
+      builder: DotNavigationBarBuilder.fromDynamic,
+      schemaId: DotNavigationBarSchema.id,
+    );
+    _schemas[DotNavigationBarSchema.id] = DotNavigationBarSchema.schema;
+  }
+
+  void withDotNavigationBarItem() {
+    _builders[DotNavigationBarItemBuilder.kType] =
+        const JsonWidgetBuilderContainer(
+      builder: DotNavigationBarItemBuilder.fromDynamic,
+      schemaId: DotNavigationBarItemSchema.id,
+    );
+    _schemas[DotNavigationBarItemSchema.id] = DotNavigationBarItemSchema.schema;
+  }
+
+  @override
+  void withCircleAvatar() {
+    _builders[CircleAvatarBuilder.kType] =
+        const JsonWidgetBuilderContainer(
+      builder: CircleAvatarBuilder.fromDynamic,
+      schemaId: CircleAvatarSchema.id,
+    );
+    _schemas[CircleAvatarSchema.id] = CircleAvatarSchema.schema;
+  }
+
+  
+
+
   void withPreferredSize() {
     _builders[PreferredSizeBuilder.kType] = const JsonWidgetBuilderContainer(
       builder: PreferredSizeBuilder.fromDynamic,
       schemaId: PreferredSizeSchema.id,
     );
     _schemas[PreferredSizeSchema.id] = PreferredSizeSchema.schema;
+  }
+
+  void withSfSlider() {
+    _builders[SfSliderBuilder.kType] = const JsonWidgetBuilderContainer(
+      builder: SfSliderBuilder.fromDynamic,
+      schemaId: SfSliderSchema.id,
+    );
+    _schemas[SfSliderSchema.id] = SfSliderSchema.schema;
   }
 }
