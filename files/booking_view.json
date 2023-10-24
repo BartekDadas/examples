@@ -1,0 +1,412 @@
+{
+    "type" : "scaffold",
+    "args" : {
+        "body" : {
+            "type" : "layout_builder",
+            "args" : {
+                "id" : "screen",
+                "child" : {
+                    "type" : "stack",
+                    "args" : {
+                        "children" : [
+                            {
+                                "type" : "stack",
+                                "args" : {
+                                    "children" : [
+                                        {
+                                            "type" : "positioned",
+                                            "args" : {
+                                                "child": {
+                                                    "type" : "container",
+                                                    "args" : {
+                                                        "height" : 450,
+                                                        "decoration" : {
+                                                            "image" : {
+                                                                "fit" : "fill",
+                                                                "image" : {
+                                                                    "type" : "network",
+                                                                    "url" : "https://luxuryvacationrentalsfl.com/wp-content/uploads/2021/05/2-Bedroom-Vacation-Homes-in-Fort-Myers-Beach.jpg"
+                                                                } 
+                                                            }
+                                                        },
+                                                        "child" : {
+                                                            "type" : "padding",
+                                                            "args" : {
+                                                                "padding" : [10, 40, 0, 0],
+                                                                "child" : {
+                                                                    "type" : "align",
+                                                                    "args" : {
+                                                                        "alignment" : "topLeft",
+                                                                        "child" : {
+                                                                            "type" : "container",
+                                                                            "args" : {
+                                                                                "width" : 30,
+                                                                                "height" : 30,
+                                                                                "decoration" : {
+                                                                                    "borderRadius" : {
+                                                                                        "type" : "circular",
+                                                                                        "radius" : 10
+                                                                                    },
+                                                                                    "color" : "FFFFFF"
+                                                                                },
+                                                                                "child" : {
+                                                                                    "type" : "material_icon",
+                                                                                    "listener" : [
+                                                                                        "key"
+                                                                                    ],
+                                                                                    "args" : {
+                                                                                        "icon" : "arrow_back"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type" : "positioned",
+                                            "args" : {
+                                                "child" : {
+                                        
+                                                    "type" : "flexible_bottom_sheet",
+                                                    "args" : {
+                                                        "bottomSheetColor" : "FFFFFF",
+                                                        "child" : {
+                                                            "type" : "padding",
+                                                            "args" : {
+                                                                "padding" : [0,40,20,0],
+                                                                "child" : {
+                                                                    "type" : "single_child_scroll_view",
+                                                                    "args" : {
+                                                                        "child" : {
+                                                                            "type" : "column",
+                                                                            "args" : {
+                                                                                "children" : [
+                                                                                    {
+                                                                                        "type" : "row",
+                                                                                        "args" : {
+                                                                                            "crossAxisAlignment" : "start",
+                                                                                            "mainAxisAlignment" : "spaceEvenly",
+                                                                                            "children" : [
+                                                                                                {
+                                                                                                    "type" : "row",
+                                                                                                    "args" : {
+                                                                                                        "children" : [
+                                                                                                            {
+                                                                                                                "type" : "material_icon",
+                                                                                                                "listener" : [
+                                                                                                                    "key"
+                                                                                                                ],
+                                                                                                                "args" : {
+                                                                                                                    "icon" : "bed",
+                                                                                                                    "color" : "#00FF00"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "type" : "text",
+                                                                                                                "args" : {
+                                                                                                                    "text" : "4"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "sized_box",
+                                                                                                    "args" : {
+                                                                                                        "width" : 5
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "row",
+                                                                                                    "args" : {
+                                                                                                        "children" : [
+                                                                                                            {
+                                                                                                                "type" : "material_icon",
+                                                                                                                "listener" : [
+                                                                                                                    "key"
+                                                                                                                ],
+                                                                                                                "args" : {
+                                                                                                                    "icon" : "shower",
+                                                                                                                    "color" : "#00FF00"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "type" : "text",
+                                                                                                                "args" : {
+                                                                                                                    "text" : "2"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "sized_box",
+                                                                                                    "args" : {
+                                                                                                        "width" : 5
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "row",
+                                                                                                    "args" : {
+                                                                                                        "children" : [
+                                                                                                            {
+                                                                                                                "type" : "material_icon",
+                                                                                                                "listener" : [
+                                                                                                                    "key"
+                                                                                                                ],
+                                                                                                                "args" : {
+                                                                                                                    "icon" : "message",
+                                                                                                                    "color" : "#00FF00"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "type" : "text",
+                                                                                                                "args" : {
+                                                                                                                    "text" : "110"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "sized_box",
+                                                                                                    "args" : {
+                                                                                                        "width" : 5
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "type" : "column",
+                                                                                        "args" : {
+                                                                                            "children" : [
+                                                                                                {
+                                                                                                    "type" : "align",
+                                                                                                    "args" : {
+                                                                                                        "alignment" : "topLeft",
+                                                                                                        "child" : {
+                                                                                                            "type" : "text",
+                                                                                                            "args" : {
+                                                                                                                "text" : "About",
+                                                                                                                "style" : {
+                                                                                                                    "fontWeight" : "bold"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                  "type" : "text",
+                                                                                                  "args" : {
+                                                                                                    "text" : "Escape to your own private oasis in this stunning\n vacation house\n Situated in a peaceful and picturesque location\n,this spacious property boasts breathtaking views of the surrounding mountains\nand is just minutes from the beach\nWith ample indoor and outdoor living space\nthis property is perfect for families or groups of friends looking to relax and unwind\nEnjoy the fully equipped kitchen, cozy bedrooms, and luxurious bathroom amenities. Spend your days lounging on the sun-drenched terrace or exploring the nearby hiking trails.\nBook your stay today and enjoy the vacation of a lifetime",
+                                                                                                    "style" : {
+                                                                                                        "textAlign" : "end",
+                                                                                                        "textDirection" : "rtl"
+                                                                                                    }
+                                                                                                  }  
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "type" : "elevated_button",
+                                                                                        "args" : {
+                                                                                            "onPressed" : "${simplePrintMessage()}",
+                                                                                            "style" : {
+                                                                                                "backgroundColor" : "0000FF"
+                                                                                            },
+                                                                                            "child" : {
+                                                                                                "type" : "text",
+                                                                                                "args" : {
+                                                                                                    "text" : "Book now",
+                                                                                                    "style" : {
+                                                                                                        "color" : "FFFFFF"
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }     
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type" : "align",
+                                "args" : {
+                                    "alignment" : "center",
+                                    "child" : {
+                                        "type" : "padding",
+                                        "args" : {
+                                            "padding" : [20, 20, 20, 20],
+                                            "child" : {
+                                                "type" : "container",
+                                                "args" : {
+                                                    "height" : 50,
+                                                    "decoration" : {
+                                                        "color" : "FFFFFF",
+                                                        "borderRadius" : {
+                                                            "type" : "circular",
+                                                            "radius" : 10
+                                                        }
+                                                    },
+                                                    "child" : {
+                                                        "type" : "stack",
+                                                        "args" : {
+                                                            "fit" : "expand",
+                                                            "children" : [
+                                                                {
+                                                                    "type" : "row",
+                                                                    "args" : {
+                                                                        "children" : [
+                                                                            {
+                                                                                "type" : "sized_box",
+                                                                                "args" : {
+                                                                                    "width" : 10
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "type" : "network_image",
+                                                                                "args" : {
+                                                                                    "src" : "https://1.img-dpreview.com/files/p/TS560x560~forums/63132016/2a1e59e12f4543bea10f2385259c81cf",
+                                                                                    "height" : 30,
+                                                                                    "width" : 30
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "type" : "sized_box",
+                                                                                "args" : {
+                                                                                    "width" : 10
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "type" : "column",
+                                                                                "args" : {
+                                                                                    "mainAxisAlignment" : "center",
+                                                                                    "crossAxisAlignment" : "start",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "type" : "text",
+                                                                                            "args" : {
+                                                                                                "text" : "Rosalia Lua",
+                                                                                                "style" : {
+                                                                                                    "fontWeight" : "bold"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "type" : "text",
+                                                                                            "args" : {
+                                                                                                "text" : "Owner"
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            {                                        
+                                                                                "type" : "spacer",
+                                                                                "args" : {}   
+                                                                            },
+                                                                            {
+                                                                                "type" : "padding",
+                                                                                "args"  : {
+                                                                                    "padding" : [0,0,20,0],
+                                                                                    "child" : {
+                                                                                        "type" : "row",
+                                                                                        "args" : {
+                                                                                            "children" : [
+                                                                                                {
+                                                                                                    "type" : "container",
+                                                                                                    "args"  : {
+                                                                                                        "width" : 30,
+                                                                                                        "height": 30,
+                                                                                                        "decoration" : {
+                                                                                                            "borderRadius" :{
+                                                                                                                "type" : "circular",
+                                                                                                                "radius" : 10
+                                                                                                            },
+                                                                                                            "color" : "0000FF"
+                                                                                                        },
+                                                                                                        "child" : {
+                                                                                                            "type" : "material_icon",
+                                                                                                            "listener" : [
+                                                                                                                "key"
+                                                                                                            ],
+                                                                                                            "args" : {
+                                                                                                                "icon" : "phone",
+                                                                                                                "color" : "#FFFFFF"
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                            
+                                                                                                },
+                                                                                                {
+                                                                                                        "type" : "sized_box",
+                                                                                                        "args" :{
+                                                                                                            "width" : 10
+                                                                                                        }
+                                                                                                },
+                                                                                                {
+                                                                                                    "type" : "container",
+                                                                                                    "args" : {
+                                                                                                        "width" : 30,
+                                                                                                        "height": 30,
+                                                                                                        "decoration" :{
+                                                                                                            "borderRadius" : {
+                                                                                                                "type" : "circular",
+                                                                                                                "radius" : 10
+                                                                                                            },
+                                                                                                            "color" : "00FF00"
+                                                                                                        },
+                                                                                                        "child" : {
+                                                                                                            "type" : "material_icon",
+                                                                                                            "listener" : [
+                                                                                                                "key"
+                                                                                                            ],
+                                                                                                            "args" : {
+                                                                                                                "icon" : "message",
+                                                                                                                "color" : "#FFFFFF"
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
