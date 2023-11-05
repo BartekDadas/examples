@@ -1,0 +1,233 @@
+{
+  "type": "scaffold",
+  "appBar": {
+    "type": "app_bar",
+    "args": {
+      "elevation": 0,
+      "backgroundColor": "Colors.transparent",
+      "title": {
+        "type": "text",
+        "args": {
+          "text": "Shoes",
+          "style": {
+            "color": "000000",
+            "fontSize": 25
+          }
+        }
+      },
+      "actions": [
+        {
+          "type": "icon_button",
+          "args": {
+            "onPressed": {},
+            "icon": {
+              "type": "material_icon",
+              "listener": [
+                "key"
+              ],
+              "args": {
+                "icon": "notifications_none",
+                "color": "000000"
+              }
+            }
+          }
+        },
+        {
+          "type": "icon_button",
+          "args": {
+            "onPressed": {},
+            "icon": {
+              "type": "material_icon",
+              "listener": [
+                "key"
+              ],
+              "args": {
+                "icon": "shopping_cart",
+                "color": "000000"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "body": {
+    "type": "single_child_scroll_view",
+    "args": {
+      "child": {
+        "type": "container",
+        "args": {
+          "padding": [
+            20,
+            20
+          ],
+          "child": {
+            "type": "column",
+            "args": {
+              "children": [
+                {
+                  "type": "container",
+                  "args": {
+                    "height": 40,
+                    "child": {
+                      "type": "list_view",
+                      "args": {
+                        "scrollDirection": "horizontal",
+                        "children": [
+                          {
+                            "type": "aspect_ratio",
+                            "args": {
+                              "aspectRatio": 1.1,
+                              "child": {
+                                "type": "container",
+                                "args": {
+                                  "margin": {
+                                    "right": 10
+                                  },
+                                  "decoration": {
+                                    "color": "Colors.grey[200]",
+                                    "borderRadius": "BorderRadius.circular(20)"
+                                  },
+                                  "child": {
+                                    "type": "center",
+                                    "args": {
+                                      "child": {
+                                        "type": "text",
+                                        "text": "All",
+                                        "style": {
+                                          "fontSize": 20
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "aspect_ratio",
+                            "args": {
+                              "aspectRatio": 1.1,
+                              "child": {
+                                "type": "container",
+                                "args": {
+                                  "margin": {
+                                    "right": 10
+                                  },
+                                  "child": {
+                                    "type": "center",
+                                    "child": {
+                                      "type": "text",
+                                      "args": {
+                                        "text": "Sneakers",
+                                        "style": {
+                                          "fontSize": 17
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "aspect_ratio",
+                            "args": {
+                              "aspectRatio": 1.1,
+                              "child": {
+                                "type": "container",
+                                "args": {
+                                  "margin": {
+                                    "right": 10
+                                  },
+                                  "child": {
+                                    "type": "center",
+                                    "args": {
+                                      "child": {
+                                        "type": "text",
+                                        "args": {
+                                          "text": "Football",
+                                          "style": {
+                                            "fontSize": 17
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "aspect_ratio",
+                            "args": {
+                              "aspectRatio": 1.1,
+                              "child": {
+                                "type": "container",
+                                "args": {
+                                  "margin": {
+                                    "right": 10
+                                  },
+                                  "child": {
+                                    "type": "center",
+                                    "args": {
+                                      "child": {
+                                        "type": "text",
+                                        "data": "Soccer",
+                                        "style": {
+                                          "fontSize": 17
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "aspect_ratio",
+                            "args": {
+                              "aspectRatio": 1.1,
+                              "child": {
+                                "type": "container",
+                                "args": {
+                                  "margin": {
+                                    "right": 10
+                                  },
+                                  "child": {
+                                    "type": "center",
+                                    "args": {
+                                      "child": {
+                                        "type": "text",
+                                        "args": {
+                                          "text": "Golf",
+                                          "style": {
+                                            "fontSize": 17
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "sized_box",
+                  "args": {
+                    "height": 20
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
