@@ -1,0 +1,245 @@
+{
+  "type": "scaffold",
+  "args" : {
+    "appBar": {
+      "type": "app_bar",
+      "args": {
+        "elevation": 0,
+        "backgroundColor": "00000000",
+        "title": {
+          "type": "text",
+          "args": {
+            "text": "Shoes",
+            "style": {
+              "color": "000000",
+              "fontSize": 25
+            }
+          }
+        },
+        "actions": [
+          {
+            "type": "icon_button",
+            "args": {
+              "onPressed": "${simplePrintMessage()}",
+              "icon": {
+                "type": "material_icon",
+                "listener": [
+                  "key"
+                ],
+                "args": {
+                  "icon": "notifications_none",
+                  "color": "000000"
+                }
+              }
+            }
+          },
+          {
+            "type": "icon_button",
+            "args": {
+              "onPressed": "${simplePrintMessage()}",
+              "icon": {
+                "type": "material_icon",
+                "listener": [
+                  "key"
+                ],
+                "args": {
+                  "icon": "shopping_cart",
+                  "color": "000000"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "body": {
+      "type" : "column",
+      "args": {
+        "children" : [
+          {
+            "type" : "sized_box",
+            "args" : {
+              "height" : 40
+            }
+          },
+          {
+            "type": "expanded",
+            "args": {
+              "child": {
+                "type": "container",
+                "args": {
+                  "padding": [
+                    10,
+                    10
+                  ],
+                  "decoration": {
+                    "image" : {
+                      "fit" : "cover",
+                      "image" : {
+                        "type" : "network",
+                        "url" : "https://i0.wp.com/cultedge.com/wp-content/uploads/2017/12/New-Balance-future.jpg?fit=1200%2C820&ssl=1"
+                      }
+                    },
+                    "color": "FF4D4D",
+                    "borderRadius": {
+                      "type": "vertical",
+                      "top": 20
+                    },
+                    "border": {
+                      "width": 3,
+                      "color": "FF9966"
+                    }
+                  },
+                  "child": {
+                    "type": "list_view",
+                    "args": {
+                      "children": [
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": [
+                              0,
+                              10,
+                              0,
+                              0
+                            ],
+                            "child": {
+                              "type": "align",
+                              "args": {
+                                "alignment": "center",
+                                "child": {
+                                  "type": "text",
+                                  "args": {
+                                    "text": "All",
+                                    "style": {
+                                      "fontSize": 32,
+                                      "color" : "FFFFFF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": [
+                              0,
+                              10,
+                              0,
+                              0
+                            ],
+                            "child": {
+                              "type": "align",
+                              "args": {
+                                "alignment": "center",
+                                "child": {
+                                  "type": "text",
+                                  "args": {
+                                    "text": "Sneakers",
+                                    "style": {
+                                      "fontSize": 24,
+                                      "color" : "FFFFFF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": [
+                              0,
+                              10,
+                              0,
+                              0
+                            ],
+                            "child": {
+                              "type": "align",
+                              "args": {
+                                "alignment": "center",
+                                "child": {
+                                  "type": "text",
+                                  "args": {
+                                    "text": "Football",
+                                    "style": {
+                                      "fontSize": 24,
+                                      "color" : "FFFFFF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": [
+                              0,
+                              10,
+                              0,
+                              0
+                            ],
+                            "child": {
+                              "type": "align",
+                              "args": {
+                                "alignment": "center",
+                                "child": {
+                                  "type": "text",
+                                  "args": {
+                                    "text": "Soccer",
+                                    "style": {
+                                      "fontSize": 24,
+                                      "color" : "FFFFFF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": [
+                              0,
+                              10,
+                              0,
+                              0
+                            ],
+                            "child": {
+                              "type": "align",
+                              "args": {
+                                "alignment": "center",
+                                "child": {
+                                  "type": "text",
+                                  "args": {
+                                    "text": "Golf",
+                                    "style": {
+                                      "fontSize": 24,
+                                      "color" : "FFFFFF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+
+
