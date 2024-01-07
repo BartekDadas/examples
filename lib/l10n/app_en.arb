@@ -1,0 +1,18 @@
+{
+    "accessCode" : "Get Access code",
+    "accessCodeSent" : "Access code was sent an email",
+    "account" : "Account",
+    "back" : "Go Back",
+    "email" : "Email",
+    "login" : "Log In",
+    "maker" : "Maker",
+    "password" : "Password",
+    "prefferences" : "Prefferences",
+    "proceed" : "Proceed",
+    "repeatEmail" : "Repeat Email",
+    "sendAgain" : "Send Again",
+    "signIn" : "Sign In",
+    "start" : "Start",
+    "title" : "Let's begin",
+    "username" : "Username"
+}
