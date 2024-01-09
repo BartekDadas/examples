@@ -2,6 +2,7 @@ import 'package:five_frame/five_frame.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
+import 'package:loading_indicator/loading_indicator.dart';
 import 'package:mafrontv3/views/maker_views/future_wid/bloc/loader_bloc.dart';
 import 'package:mafrontv3/views/maker_views/future_wid/swipy_wid.dart';
 
@@ -28,7 +29,7 @@ class FutureWid extends StatelessWidget {
             } else if(snapshot.hasError) {
               return Center(child: Text(snapshot.error.toString()));
             } else {
-              return const Center(child: CircularProgressIndicator(),);
+              return const Center(child: LoadingIndicator(indicatorType: Indicator.ballClipRotateMultiple,));
             }
           },
     );

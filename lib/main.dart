@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_super/flutter_super.dart' hide ContextExt;
@@ -13,6 +15,7 @@ import 'package:mafrontv3/storage/secret/keys.dart';
 import 'package:mafrontv3/storage/string_keys.dart';
 import 'package:mafrontv3/storage/theme.dart';
 import 'package:mafrontv3/views/home_page.dart';
+import 'package:mafrontv3/views/maker_views/screen_shot_wid.dart';
 import 'package:mafrontv3/views/start_page.dart';
 import 'package:one_context/one_context.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -22,7 +25,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   // await EasyLocalization.ensureInitialized();
-
+  WidgetsFlutterBinding.ensureInitialized();
   OnePlatform.app = () {
     return 
     // EasyLocalization(
@@ -36,6 +39,31 @@ void main() async {
   
 }
 final _getIt = GetIt.instance;
+
+CustomTransitionPage buildPageWithTransition({
+  required BuildContext context,
+  required GoRouterState state,
+  required Widget child,
+}) {
+
+  return CustomTransitionPage(
+      key: state.pageKey,
+      child: child,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        const begin = Offset(0.0, 1.0);
+        const end = Offset.zero;
+        final tween = Tween(begin: begin, end: end);
+        final positionAnimated = animation.drive(tween);
+        return SlideTransition(position: positionAnimated, child: child,);
+      }, 
+  );
+}
+
+
+
+
+
+
 
 final router = GoRouter(
   redirect: (context, state) {
@@ -58,10 +86,26 @@ final router = GoRouter(
       ),
   GoRoute(
         path: MARoutes.appPage,
-        builder: (BuildContext context, GoRouterState state) {
-          return const HomePage();
+        builder: (context, state) => const HomePage(),
+        pageBuilder: (BuildContext context, GoRouterState state) {
+          return buildPageWithTransition(
+              context: context,
+              state: state,
+              child: const HomePage(),
+          );
         } 
-      )
+      ),
+  GoRoute(
+      path: MARoutes.widScreen,
+      builder: (context, state) => const ScreenshotWid(),
+      pageBuilder: (context, state) {
+        return buildPageWithTransition(
+            context: context,
+            state: state,
+            child: const ScreenshotWid(),
+        );
+      }
+  )
 ]);
 
 class SplashScreen extends StatelessWidget  {

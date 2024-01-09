@@ -31,10 +31,10 @@ class HomePage extends StatelessWidget {
           controller.index = value;
           pageController.animateToPage(controller.index, duration: const Duration(milliseconds: 500), curve: Curves.linear);
         },
-        children: [
-          const UserPage(),
+        children: const [
+          UserPage(),
           MakerPage(),
-          const PrefferencesPage()
+          PrefferencesPage()
         ],
       ),
       bottomNavigationBar: SlidingClippedNavBar(

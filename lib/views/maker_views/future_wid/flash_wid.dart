@@ -2,21 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 // import 'package:get/get.dart';
 
-class FlashWid extends StatefulWidget {
-  const FlashWid({Key? key, this.theWidget}) : super(key: key);
+class FlashWid extends StatelessWidget {
+  const FlashWid({super.key, this.theWidget});
   final JsonWidgetData? theWidget;
 
   @override
-  State<FlashWid> createState() => _FlashWidState();
-}
-
-class _FlashWidState extends State<FlashWid> {
-  @override
   Widget build(BuildContext context) {
-    if(widget.theWidget == null) {
+    if(theWidget == null) {
       return const Text("no data");
     } else {
-      return widget.theWidget!.build(context: context);
+      return theWidget!.build(context: context);
     }
   }
 }

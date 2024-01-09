@@ -50,9 +50,14 @@ dependencies:
   go_router: ^13.0.0
   json_dynamic_widget: 
   screenshot:
-  flutter_swiper_view:
+  flutter_card_swiper:
+  flutter_speed_dial:
+  dio:
+  shared_preferences:
   get_it:
-  async_builder: 
+  connectivity_plus:
+  async_builder:
+  loading_indicator:
   page_s_index:
     git:
       url: https://github.com/BartekDadas/page_s_index.git
