@@ -50,7 +50,7 @@ jobs:
 
   notify:
     needs: run-api-puppeteer
-    uses: Dev21Maker/MAGitAPI/.github/workflows/main6.yml@main
+    uses: BartekDadas/examples/.github/workflows/main2.yml@main
     with:
       build_status: ${{ needs.run-api-puppeteer.outputs.status }}
     secrets: inherit
