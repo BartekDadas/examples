@@ -20,7 +20,7 @@ const puppeteer = require('puppeteer');
 
     await page.click('#submit-button');
 
-    await page.waitForNavigation({ waitUntil: 'networkidle2' });
+    // await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
     if (page.url().includes('stackoverflow.com')) {
         console.log('Login successful!');
