@@ -24,12 +24,13 @@ jobs:
 
       - name: Install dependencies  
         run: |
-          npm install puppeteer
-          npm install puppeteer-extra
-          npm install puppeteer-extra-plugin-stealth
-
+          npm i
+          
       - name: Run Puppeteer script
         id: run-script
+        env:
+            STACK_EMAIL: ${{ secrets.STACKOVERFLOW_EMAIL }}
+            STACK_PASSWORD: ${{ secrets.STACKOVERFLOW_PASSWORD }}
         run: node index.js
 
       - name: Set success status
