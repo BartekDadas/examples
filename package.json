@@ -9,6 +9,6 @@
   "author": "Dev21Maker",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^21.0.0"
+    "puppeteer": "^22.8.2"
   }
 }
