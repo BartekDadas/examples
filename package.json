@@ -1,0 +1,14 @@
+{
+  "name": "puppeteer-stackoverflow-login-test",
+  "version": "1.0.0",
+  "description": "A Puppeteer script to test login functionality on Stack Overflow via GitHub Actions.",
+  "main": "puppeteer-script.js",
+  "scripts": {
+    "test": "node puppeteer-script.js"
+  },
+  "author": "Dev21Maker",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}
