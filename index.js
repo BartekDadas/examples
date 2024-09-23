@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 
   try {  
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     await page.goto('https://stackoverflow.com/users/login', { waitUntil: 'networkidle2' });
@@ -32,6 +32,6 @@ const puppeteer = require('puppeteer');
 
   } catch (error) {
     console.error(error);
-    proccess.exit(1);
+    process.exit(1);
   }
 })();
